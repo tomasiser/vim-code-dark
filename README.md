@@ -6,6 +6,8 @@
 ![Ruby and NERDTree](https://cloud.githubusercontent.com/assets/10374559/23333137/b86efaa0-fb86-11e6-8c06-813f81c1f9bb.png)
 ![Editing HTML](https://cloud.githubusercontent.com/assets/10374559/23333136/b86b472a-fb86-11e6-8147-da61bc29e8b5.png)
 
+*Code samples [1](http://sandbox.mc.edu/~bennet/ruby/code/), [2](https://tmtheme-editor.herokuapp.com/), [`nerdtree`](https://github.com/scrooloose/nerdtree)*
+
 ## Color Palette
 
 ![Color Palette](https://cloud.githubusercontent.com/assets/10374559/23146186/d005f732-f7d4-11e6-89fe-c27b0347702e.png)
