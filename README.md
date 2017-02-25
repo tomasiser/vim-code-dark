@@ -3,7 +3,8 @@
 
 ## Screenshots
 
-![Screenshots](https://cloud.githubusercontent.com/assets/10374559/23332907/f524012a-fb81-11e6-8386-cda654d33ccd.png)
+![Ruby and NERDTree](https://cloud.githubusercontent.com/assets/10374559/23333137/b86efaa0-fb86-11e6-8c06-813f81c1f9bb.png)
+![Editing HTML](https://cloud.githubusercontent.com/assets/10374559/23333136/b86b472a-fb86-11e6-8147-da61bc29e8b5.png)
 
 ## Color Palette
 
