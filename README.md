@@ -9,7 +9,7 @@
 
 ### gVim *(full support)*
 ![Ruby and NERDTree](https://cloud.githubusercontent.com/assets/10374559/23333137/b86efaa0-fb86-11e6-8c06-813f81c1f9bb.png)
-![Editing HTML](https://cloud.githubusercontent.com/assets/10374559/23333136/b86b472a-fb86-11e6-8147-da61bc29e8b5.png)
+![Editing HTML and CSS](https://cloud.githubusercontent.com/assets/10374559/23344709/459972a2-fc81-11e6-9b50-c432d998caef.png)
 
 *Code samples [1](http://sandbox.mc.edu/~bennet/ruby/code/), [2](https://tmtheme-editor.herokuapp.com/), [`nerdtree`](https://github.com/scrooloose/nerdtree)*
 
