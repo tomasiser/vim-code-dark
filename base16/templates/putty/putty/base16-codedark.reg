@@ -1,0 +1,72 @@
+Windows Registry Editor Version 5.00
+
+; Base16 codedark
+; schema by Tomas Iser (https://github.com/tomasiser)
+[HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\Sessions\codedark]
+
+; Default Foreground
+"Colour0"="212,212,212"
+
+; Default Bold Foreground  -- equals to non-bold
+"Colour1"="212,212,212"
+
+; Default Background
+"Colour2"="30,30,30"
+
+; Default Bold Background  -- equals to non-bold
+"Colour3"="30,30,30"
+
+; Cursor Text -- equals to default background
+"Colour4"="30,30,30"
+
+; Cursor Colour -- equals to default foreground
+"Colour5"="212,212,212"
+
+; ANSI Black
+"Colour6"="30,30,30"
+
+; ANSI Black Bold
+"Colour7"="60,60,60"
+
+; ANSI Red
+"Colour8"="209,105,105"
+
+; ANSI Red Bold
+"Colour9"="181,206,168"
+
+; ANSI Green
+"Colour10"="96,139,78"
+
+; ANSI Green Bold
+"Colour11"="38,38,38"
+
+; ANSI Yellow
+"Colour12"="215,186,125"
+
+; ANSI Yellow Bold
+"Colour13"="48,48,48"
+
+; ANSI Blue
+"Colour14"="86,156,214"
+
+; ANSI Blue Bold
+"Colour15"="128,128,128"
+
+; ANSI Magenta
+"Colour16"="197,134,192"
+
+; ANSI Magenta Bold
+"Colour17"="233,233,233"
+
+; ANSI Cyan
+"Colour18"="156,220,254"
+
+; ANSI Cyan Bold
+"Colour19"="206,145,120"
+
+; ANSI White
+"Colour20"="212,212,212"
+
+; ANSI White Bold
+"Colour21"="255,255,255"
+

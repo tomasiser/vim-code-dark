@@ -5,24 +5,54 @@ scriptencoding utf-8
 
 let g:airline#themes#codedark#palette = {}
 
-let s:cdFront = {'gui': '#FFFFFF', 'cterm': '00'}
-let s:cdFrontGray = {'gui': '#D4D4D4', 'cterm': '00'}
-let s:cdBack = {'gui': '#1E1E1E', 'cterm': '00'}
-let s:cdSelection = {'gui': '#264F78', 'cterm': '00'}
+" Terminal colors (base16):
+let s:cterm00 = "00"
+let s:cterm03 = "08"
+let s:cterm05 = "07"
+let s:cterm07 = "15"
+let s:cterm08 = "01"
+let s:cterm0A = "03"
+let s:cterm0B = "02"
+let s:cterm0C = "06"
+let s:cterm0D = "04"
+let s:cterm0E = "05"
+if exists('base16colorspace') && base16colorspace == "256"
+  let s:cterm01 = "18"
+  let s:cterm02 = "19"
+  let s:cterm04 = "20"
+  let s:cterm06 = "21"
+  let s:cterm09 = "16"
+  let s:cterm0F = "17"
+else
+  let s:cterm01 = "00"
+  let s:cterm02 = "08"
+  let s:cterm04 = "07"
+  let s:cterm06 = "07"
+  let s:cterm09 = "06"
+  let s:cterm0F = "03"
+endif
 
-let s:cdPurple = {'gui': '#682279', 'cterm': '00'}
-let s:cdBlue = {'gui': '#0A7ACA', 'cterm': '00'}
-let s:cdLightBlue = {'gui': '#5cb6f8', 'cterm': '00'}
-let s:cdDarkBlue = {'gui': '#11639B', 'cterm': '00'}
-let s:cdOrange = {'gui': '#CE9178', 'cterm': '00'}
-let s:cdYellow = {'gui': '#FFAF00', 'cterm': '00'}
-let s:cdRed = {'gui': '#F44747', 'cterm': '00'}
+if &t_Co >= 256
+    let g:codedark_term256=1
+elseif !exists("g:codedark_term256")
+    let g:codedark_term256=0
+endif
 
-let s:cdDarkDarkDark = {'gui': '#262626', 'cterm': '00'}
-let s:cdDarkDark = {'gui': '#303030', 'cterm': '00'}
-let s:cdDark = {'gui': '#3C3C3C', 'cterm': '00'}
+let s:cdFront = {'gui': '#FFFFFF', 'cterm':  (g:codedark_term256 ? '15' : s:cterm07)}
+let s:cdFrontGray = {'gui': '#D4D4D4', 'cterm': (g:codedark_term256 ? '188' : s:cterm05)}
+let s:cdBack = {'gui': '#1E1E1E', 'cterm': (g:codedark_term256 ? '234' : s:cterm00)}
+let s:cdSelection = {'gui': '#264F78', 'cterm': (g:codedark_term256 ? '24' : s:cterm01)}
 
-let s:Warning = [ s:cdRed.gui, s:cdDarkDark.gui, s:cdFront.cterm, s:cdDarkDarkDark.cterm, 'none']
+let s:cdBlue = {'gui': '#0A7ACA', 'cterm': (g:codedark_term256 ? '32' : s:cterm0D)}
+let s:cdLightBlue = {'gui': '#5CB6F8', 'cterm': (g:codedark_term256 ? '75' : s:cterm0C)}
+let s:cdYellow = {'gui': '#FFAF00', 'cterm': (g:codedark_term256 ? '214' : s:cterm0A)}
+let s:cdRed = {'gui': '#F44747', 'cterm': (g:codedark_term256 ? '203' : s:cterm08)}
+
+let s:cdDarkDarkDark = {'gui': '#262626', 'cterm': (g:codedark_term256 ? '235' : s:cterm01)}
+let s:cdDarkDark = {'gui': '#303030', 'cterm': (g:codedark_term256 ? '236' : s:cterm02)}
+let s:cdDark = {'gui': '#3C3C3C', 'cterm': (g:codedark_term256 ? '237' : s:cterm03)}
+
+let s:Warning = [ s:cdRed.gui, s:cdDarkDark.gui, s:cdRed.cterm, s:cdDarkDark.cterm, 'none']
 
 " Normal:
 
@@ -62,7 +92,7 @@ let g:airline#themes#codedark#palette.replace_modified.airline_warning = s:Warni
 
 " Visual:
 
-let s:V1 = [ s:cdLightBlue.gui, s:cdDark.gui, s:cdFront.cterm, s:cdPurple.cterm, 'none' ]
+let s:V1 = [ s:cdLightBlue.gui, s:cdDark.gui, s:cdLightBlue.cterm, s:cdDark.cterm, 'none' ]
 let s:V2 = [ s:cdFront.gui, s:cdDarkDark.gui, s:cdFront.cterm, s:cdDarkDark.cterm, 'none' ]
 let s:V3 = [ s:cdFront.gui, s:cdDarkDarkDark.gui, s:cdFront.cterm, s:cdDarkDarkDark.cterm, 'none' ]
 let s:VM = [ s:cdFront.gui, s:cdDarkDarkDark.gui, s:cdFront.cterm, s:cdDarkDarkDark.cterm, 'none']
