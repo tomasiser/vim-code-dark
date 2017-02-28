@@ -57,10 +57,11 @@ let g:airline_theme = 'codedark'
 #### 3.2) If you use a terminal with at least 256 colors
 **(e.g. GNOME Terminal, newest Bash for Windows)**
 
-If your terminal supports 256 and more colors (see [this script](http://www.robmeerman.co.uk/unix/256colours) if you want to test your terminal), this colorscheme should automatically use closest available colors to match the palette. You **may need to set `t_Co` to 256** in your `.vimrc` before setting the colorscheme:
+If your terminal supports 256 and more colors (see [this script](http://www.robmeerman.co.uk/unix/256colours) if you want to test your terminal), this colorscheme should automatically use closest available colors to match the palette. You **may need to set `t_Co` to 256** and [possibly also reset the `t_ut` value](http://vi.stackexchange.com/questions/238/tmux-is-changing-part-of-the-background-in-vim) in your `.vimrc` before setting the colorscheme:
 
 ```
 set t_Co=256
+set t_ut=
 colorscheme codedark
 ```
 
@@ -99,6 +100,14 @@ iTerm2 should actually support 256 colors, try setting `Report Terminal Type` to
 PuTTY should actually support 256 colors, try following [steps on StackOverflow](http://superuser.com/questions/436910/emulate-256-colors-in-putty-terminal). If it does not work, run `base16/templates/putty/putty/base16-codedark.reg` to modify your registry, then run PuTTY and load `codedark` in the session list. This will modify your PuTTY terminal colors.
 
 ## FAQ
+
+### The background color in my terminal is wrong when there is no text!
+Try resetting the `t_ut` value in your `.vimrc` as [described here](http://vi.stackexchange.com/questions/238/tmux-is-changing-part-of-the-background-in-vim):
+```
+set t_Co=256
+set t_ut=
+colorscheme codedark
+```
 
 ### What is and how to enable the conservative mode?
 If you don't like many colors and prefer the **conservative style of the standard Visual Studio**, you can try the conservative mode with reduced number of colors. To enable it, put the following line to your `.vimrc` *before* setting the scheme, like so:
