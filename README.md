@@ -117,13 +117,16 @@ let g:codedark_conservative = 1
 colorscheme codedark
 ```
 
-### Why does file syntax not look like in Visual Studio Code?
-Because Vim uses different syntax rules for files and this is just a colorscheme.
+### Something is broken but I know how to fix it!
+Pull requests are welcome! Feel free to send one with an explanation!
 
-### My favourite language XYZ has wrong colors!
-There are a lot of syntax definitions with different highlight groups. Feel free to send a pull request with additional highlight groups.
+### Why does file syntax not look exactly like in Visual Studio Code?
+Because Vim uses different syntax rules. This is just a colorscheme for vim, not a syntax definition.
 
-### What setup can I see on the screenshots?
+### My favourite language has wrong / bad / awful colors!
+There are a lot of syntax definitions with different highlight groups. Feel free to send a pull request with additional highlight groups!
+
+### What setup can I see on the first screenshots?
 Screenshots come from gVim on Windows with the following font options and [`vim-airline`](https://github.com/vim-airline/vim-airline) enabled.
 
 ```
