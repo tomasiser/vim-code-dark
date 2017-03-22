@@ -210,7 +210,7 @@ call <sid>hi('Underlined', s:cdNone, {}, 'underline', {})
 
 call <sid>hi('Ignore', s:cdFront, {}, 'none', {})
 
-call <sid>hi('Error', s:cdNone, s:cdNone, 'undercurl', s:cdRed)
+call <sid>hi('Error', s:cdRed, {}, 'undercurl', s:cdRed)
 
 call <sid>hi('Todo', s:cdNone, s:cdLeftMid, 'none', {})
 
