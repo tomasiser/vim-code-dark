@@ -203,7 +203,7 @@ call <sid>hi('Special', s:cdFront, {}, 'none', {})
 call <sid>hi('SpecialChar', s:cdFront, {}, 'none', {})
 call <sid>hi('Tag', s:cdFront, {}, 'none', {})
 call <sid>hi('Delimiter', s:cdFront, {}, 'none', {})
-call <sid>hi('SpecialComment', s:cdFront, {}, 'none', {})
+call <sid>hi('SpecialComment', s:cdGreen, {}, 'none', {})
 call <sid>hi('Debug', s:cdFront, {}, 'none', {})
 
 call <sid>hi('Underlined', s:cdNone, {}, 'underline', {})
