@@ -110,6 +110,7 @@ endif
 let s:cdGray = {'gui': '#808080', 'cterm': s:cterm04, 'cterm256': '08'}
 let s:cdViolet = {'gui': '#646695', 'cterm': s:cterm04, 'cterm256': '60'}
 let s:cdBlue = {'gui': '#569CD6', 'cterm': s:cterm0D, 'cterm256': '75'}
+let s:cdDarkBlue = {'gui': '#223E55', 'cterm': s:cterm0D, 'cterm256': '73'}
 let s:cdLightBlue = {'gui': '#9CDCFE', 'cterm': s:cterm0C, 'cterm256': '117'}
 if g:codedark_conservative | let s:cdLightBlue = s:cdFront | endif
 let s:cdGreen = {'gui': '#608B4E', 'cterm': s:cterm0B, 'cterm256': '65'}
@@ -255,3 +256,29 @@ call <sid>hi('jsThis', s:cdBlue, {}, 'none', {})
 " Ruby:
 call <sid>hi('rubyClassNameTag', s:cdBlueGreen, {}, 'none', {})
 
+" Golang:
+call <sid>hi('goPackage', s:cdBlue, {}, 'none', {})
+call <sid>hi('goImport', s:cdBlue, {}, 'none', {})
+call <sid>hi('goVar', s:cdBlue, {}, 'none', {})
+call <sid>hi('goConst', s:cdBlue, {}, 'none', {})
+call <sid>hi('goStatement', s:cdPink, {}, 'none', {})
+call <sid>hi('goType', s:cdBlue, {}, 'none', {})
+call <sid>hi('goSignedInts', s:cdBlue, {}, 'none', {})
+call <sid>hi('goUnsignedInts', s:cdBlue, {}, 'none', {})
+call <sid>hi('goFloats', s:cdBlue, {}, 'none', {})
+call <sid>hi('goComplexes', s:cdBlue, {}, 'none', {})
+call <sid>hi('goBuiltins', s:cdYellow, {}, 'none', {})
+call <sid>hi('goBoolean', s:cdBlue, {}, 'none', {})
+call <sid>hi('goPredefinedIdentifiers', s:cdBlue, {}, 'none', {})
+call <sid>hi('goTodo', s:cdGreen, {}, 'none', {})
+call <sid>hi('goDeclaration', s:cdBlue, {}, 'none', {})
+call <sid>hi('goDeclType', s:cdBlue, {}, 'none', {})
+call <sid>hi('goTypeDecl', s:cdBlue, {}, 'none', {})
+call <sid>hi('goTypeName', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('goVarDefs', s:cdLightBlue, {}, 'none', {})
+call <sid>hi('goReceiver', s:cdFront, {}, 'none', {})
+call <sid>hi('goReceiverType', s:cdDarkBlue, {}, 'none', {})
+call <sid>hi('goFunctionCall', s:cdYellow, {}, 'none', {})
+call <sid>hi('goMethodCall', s:cdYellow, {}, 'none', {})
+call <sid>hi('goSingleDecl', s:cdLightBlue, {}, 'none', {})
+call <sid>hi('Type', s:cdDarkBlue, {}, 'none', {})
