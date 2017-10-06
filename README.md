@@ -29,11 +29,16 @@
 
 Simply as any other Vim plugins: download manually or follow the standard procedure of your plugin manager:
 *  [Vundle](https://github.com/gmarik/vundle)
-  *  `Plugin 'tomasiser/vim-code-dark'`
+ ```
+ Plugin 'tomasiser/vim-code-dark'
+ ```
 *  [vim-plug](https://github.com/junegunn/vim-plug)
-  *  `Plug 'tomasiser/vim-code-dark'`
+```
+Plug 'tomasiser/vim-code-dark'
+```
 *  manual
-  *  copy all of the files to `~/.vim` (or `$HOME\vimfiles` on Windows) directory
+
+   copy all of the files to `~/.vim` (or `$HOME\vimfiles` on Windows) directory
 
 ### 2) Enable in `.vimrc`
 
