@@ -107,7 +107,7 @@ if !exists("g:codedark_conservative")
     let g:codedark_conservative=0
 endif
 
-let s:cdDarkGray = {'gui': '#606060', 'cterm': s:cterm04, 'cterm256': '08'}
+let s:cdDarkGray = {'gui': '#505050', 'cterm': s:cterm04, 'cterm256': '08'}
 let s:cdGray = {'gui': '#808080', 'cterm': s:cterm04, 'cterm256': '08'}
 let s:cdViolet = {'gui': '#646695', 'cterm': s:cterm04, 'cterm256': '60'}
 let s:cdBlue = {'gui': '#569CD6', 'cterm': s:cterm0D, 'cterm256': '75'}
@@ -286,19 +286,37 @@ call <sid>hi('goSingleDecl', s:cdLightBlue, {}, 'none', {})
 
 " VimL:
 call <sid>hi('vimUserFunc', s:cdYellow, {}, 'none', {})
+call <sid>hi('vimNotFunc', s:cdYellow, {}, 'none', {})
 call <sid>hi('vimFunction', s:cdYellow, {}, 'none', {})
-call <sid>hi('vimCommand', s:cdPink, {}, 'none', {})
 call <sid>hi('vimCmdSep', s:cdPink, {}, 'none', {})
+call <sid>hi('vimCommand', s:cdPink, {}, 'none', {})
 call <sid>hi('vimBracket', s:cdGray, {}, 'none', {})
-call <sid>hi('vimOper', s:cdFront, {}, 'none', {})
-call <sid>hi('vimSetSep', s:cdFront, {}, 'none', {})
+call <sid>hi('vimOperParen', s:cdFront, {}, 'none', {})
 call <sid>hi('vimParenSep', s:cdFront, {}, 'none', {})
+call <sid>hi('vimSetSep', s:cdFront, {}, 'none', {})
+call <sid>hi('vimOper', s:cdFront, {}, 'none', {})
+call <sid>hi('vimSep', s:cdFront, {}, 'none', {})
 call <sid>hi('vimOption', s:cdLightBlue, {}, 'none', {})
-call <sid>hi('vimOperParen', s:cdLightBlue, {}, 'none', {})
 call <sid>hi('vimSet', s:cdLightBlue, {}, 'none', {})
-call <sid>hi('vimLet', s:cdPink, {}, 'none', {})
+call <sid>hi('vimLet', s:cdBlue, {}, 'none', {})
 call <sid>hi('vimMap', s:cdPink, {}, 'none', {})
 call <sid>hi('vimNotation', s:cdBlue, {}, 'none', {})
 call <sid>hi('vimMapModKey', s:cdYellowOrange, {}, 'none', {})
 call <sid>hi('vimMapLhs', s:cdYellowOrange, {}, 'none', {})
 call <sid>hi('vimMapRhs', s:cdBlueGreen, {}, 'none', {})
+
+call <sid>hi('vimSynType', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('vimFtCmd', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('vimFtOption', s:, {}, 'none', {})
+
+call <sid>hi('vimIsCommand', s:, {}, 'none', {})
+
+call <sid>hi('vimGroup', s:, {}, 'none', {})
+call <sid>hi('vimHighlight', s:, {}, 'none', {})
+call <sid>hi('vimHiGui', s:, {}, 'none', {})
+call <sid>hi('vimHiAttrib', s:, {}, 'none', {})
+
+
+call <sid>hi('vimAutoCmd', s:, {}, 'none', {})
+call <sid>hi('vimAutoEvent', s:, {}, 'none', {})
+call <sid>hi('vimAutoCmdSfxList', s:, {}, 'none', {})
