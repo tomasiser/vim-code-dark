@@ -107,6 +107,7 @@ if !exists("g:codedark_conservative")
     let g:codedark_conservative=0
 endif
 
+let s:cdDarkGray = {'gui': '#606060', 'cterm': s:cterm04, 'cterm256': '08'}
 let s:cdGray = {'gui': '#808080', 'cterm': s:cterm04, 'cterm256': '08'}
 let s:cdViolet = {'gui': '#646695', 'cterm': s:cterm04, 'cterm256': '60'}
 let s:cdBlue = {'gui': '#569CD6', 'cterm': s:cterm0D, 'cterm256': '75'}
@@ -171,7 +172,7 @@ call <sid>hi('VisualNOS', s:cdNone, s:cdSelection, 'none', {})
 call <sid>hi('WarningMsg', s:cdOrange, s:cdBack, 'none', {})
 call <sid>hi('WildMenu', s:cdNone, s:cdSelection, 'none', {})
 
-call <sid>hi('Comment', s:cdGray, {}, 'none', {})
+call <sid>hi('Comment', s:cdDarkGray, {}, 'none', {})
 
 call <sid>hi('Constant', s:cdBlue, {}, 'none', {})
 call <sid>hi('String', s:cdOrange, {}, 'none', {})
@@ -285,6 +286,7 @@ call <sid>hi('goSingleDecl', s:cdLightBlue, {}, 'none', {})
 
 " VimL:
 call <sid>hi('vimUserFunc', s:cdYellow, {}, 'none', {})
+call <sid>hi('vimFunction', s:cdYellow, {}, 'none', {})
 call <sid>hi('vimCommand', s:cdPink, {}, 'none', {})
 call <sid>hi('vimBracket', s:cdGray, {}, 'none', {})
 call <sid>hi('vimSetSep', s:cdFront, {}, 'none', {})
@@ -292,7 +294,7 @@ call <sid>hi('vimOption', s:cdLightBlue, {}, 'none', {})
 call <sid>hi('vimSet', s:cdLightBlue, {}, 'none', {})
 call <sid>hi('vimLet', s:cdPink, {}, 'none', {})
 call <sid>hi('vimMap', s:cdPink, {}, 'none', {})
-call <sid>hi('vimNotation', s:cdBlue, {}, 'none', {})
+" call <sid>hi('vimNotation', s:cdBlue, {}, 'none', {})
 call <sid>hi('vimMapLhs', s:cdYellow, {}, 'none', {})
 " call <sid>hi('vimMapRhs', s:cdBlueGreen, {}, 'none', {})
 call <sid>hi('vimMapModKey', s:cdYellow, {}, 'none', {})
