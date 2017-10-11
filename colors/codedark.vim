@@ -311,10 +311,10 @@ call <sid>hi('vimFtOption', s:cdBlue, {}, 'none', {})
 
 " call <sid>hi('vimIsCommand', s:, {}, 'none', {})
 
-" call <sid>hi('vimGroup', s:, {}, 'none', {})
-" call <sid>hi('vimHighlight', s:, {}, 'none', {})
 " call <sid>hi('vimHiGui', s:, {}, 'none', {})
-" call <sid>hi('vimHiAttrib', s:, {}, 'none', {})
+call <sid>hi('vimHighlight', s:cdBlue, {}, 'none', {})
+call <sid>hi('vimGroup', s:cdYellowOrange, {}, 'none', {})
+call <sid>hi('vimHiAttrib', s:cdLightBlue, {}, 'none', {})
 
 
 " call <sid>hi('vimAutoCmd', s:, {}, 'none', {})
