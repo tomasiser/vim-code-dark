@@ -286,10 +286,10 @@ call <sid>hi('goSingleDecl', s:cdLightBlue, {}, 'none', {})
 
 " VimL:
 call <sid>hi('vimUserFunc', s:cdYellow, {}, 'none', {})
-call <sid>hi('vimNotFunc', s:cdYellow, {}, 'none', {})
 call <sid>hi('vimFunction', s:cdYellow, {}, 'none', {})
-call <sid>hi('vimCmdSep', s:cdPink, {}, 'none', {})
+call <sid>hi('vimNotFunc', s:cdPink, {}, 'none', {})
 call <sid>hi('vimCommand', s:cdPink, {}, 'none', {})
+call <sid>hi('vimCmdSep', s:cdPink, {}, 'none', {})
 call <sid>hi('vimBracket', s:cdGray, {}, 'none', {})
 call <sid>hi('vimOperParen', s:cdFront, {}, 'none', {})
 call <sid>hi('vimParenSep', s:cdFront, {}, 'none', {})
@@ -307,7 +307,7 @@ call <sid>hi('vimMapRhs', s:cdBlueGreen, {}, 'none', {})
 
 call <sid>hi('vimSynType', s:cdBlueGreen, {}, 'none', {})
 call <sid>hi('vimFtCmd', s:cdBlueGreen, {}, 'none', {})
-" call <sid>hi('vimFtOption', s:, {}, 'none', {})
+call <sid>hi('vimFtOption', s:cdBlue, {}, 'none', {})
 
 " call <sid>hi('vimIsCommand', s:, {}, 'none', {})
 
