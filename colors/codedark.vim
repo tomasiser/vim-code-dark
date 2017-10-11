@@ -307,16 +307,16 @@ call <sid>hi('vimMapRhs', s:cdBlueGreen, {}, 'none', {})
 
 call <sid>hi('vimSynType', s:cdBlueGreen, {}, 'none', {})
 call <sid>hi('vimFtCmd', s:cdBlueGreen, {}, 'none', {})
-call <sid>hi('vimFtOption', s:, {}, 'none', {})
+" call <sid>hi('vimFtOption', s:, {}, 'none', {})
 
-call <sid>hi('vimIsCommand', s:, {}, 'none', {})
+" call <sid>hi('vimIsCommand', s:, {}, 'none', {})
 
-call <sid>hi('vimGroup', s:, {}, 'none', {})
-call <sid>hi('vimHighlight', s:, {}, 'none', {})
-call <sid>hi('vimHiGui', s:, {}, 'none', {})
-call <sid>hi('vimHiAttrib', s:, {}, 'none', {})
+" call <sid>hi('vimGroup', s:, {}, 'none', {})
+" call <sid>hi('vimHighlight', s:, {}, 'none', {})
+" call <sid>hi('vimHiGui', s:, {}, 'none', {})
+" call <sid>hi('vimHiAttrib', s:, {}, 'none', {})
 
 
-call <sid>hi('vimAutoCmd', s:, {}, 'none', {})
-call <sid>hi('vimAutoEvent', s:, {}, 'none', {})
-call <sid>hi('vimAutoCmdSfxList', s:, {}, 'none', {})
+" call <sid>hi('vimAutoCmd', s:, {}, 'none', {})
+" call <sid>hi('vimAutoEvent', s:, {}, 'none', {})
+" call <sid>hi('vimAutoCmdSfxList', s:, {}, 'none', {})
