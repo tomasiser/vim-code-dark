@@ -282,3 +282,7 @@ call <sid>hi('goReceiverType', s:cdDarkBlue, {}, 'none', {})
 call <sid>hi('goFunctionCall', s:cdYellow, {}, 'none', {})
 call <sid>hi('goMethodCall', s:cdYellow, {}, 'none', {})
 call <sid>hi('goSingleDecl', s:cdLightBlue, {}, 'none', {})
+
+" VimL:
+call <sid>hi('vimSet', s:cdLightBlue, {}, 'none', {})
+call <sid>hi('vimOption', s:cdLightBlue, {}, 'none', {})
