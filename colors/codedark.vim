@@ -108,6 +108,8 @@ if !exists("g:codedark_conservative")
 endif
 
 let s:cdDarkGray = {'gui': '#505050', 'cterm': s:cterm04, 'cterm256': '08'}
+let s:cdBrightBlue = {'gui': '#007ACC', 'cterm': s:cterm0D, 'cterm256': '73'}
+
 let s:cdGray = {'gui': '#808080', 'cterm': s:cterm04, 'cterm256': '08'}
 let s:cdViolet = {'gui': '#646695', 'cterm': s:cterm04, 'cterm256': '60'}
 let s:cdBlue = {'gui': '#569CD6', 'cterm': s:cterm0D, 'cterm256': '75'}
@@ -304,19 +306,35 @@ call <sid>hi('vimNotation', s:cdBlue, {}, 'none', {})
 call <sid>hi('vimMapModKey', s:cdYellowOrange, {}, 'none', {})
 call <sid>hi('vimMapLhs', s:cdYellowOrange, {}, 'none', {})
 call <sid>hi('vimMapRhs', s:cdBlueGreen, {}, 'none', {})
-
-call <sid>hi('vimSynType', s:cdBlueGreen, {}, 'none', {})
-call <sid>hi('vimFtCmd', s:cdBlueGreen, {}, 'none', {})
-call <sid>hi('vimFtOption', s:cdBlue, {}, 'none', {})
-
 " call <sid>hi('vimIsCommand', s:, {}, 'none', {})
-
+call <sid>hi('vimFtOption', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('vimSynType', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('vimFtCmd', s:cdPink, {}, 'none', {})
 " call <sid>hi('vimHiGui', s:, {}, 'none', {})
 call <sid>hi('vimHighlight', s:cdBlue, {}, 'none', {})
 call <sid>hi('vimGroup', s:cdYellowOrange, {}, 'none', {})
 call <sid>hi('vimHiAttrib', s:cdLightBlue, {}, 'none', {})
-
-
 " call <sid>hi('vimAutoCmd', s:, {}, 'none', {})
 " call <sid>hi('vimAutoEvent', s:, {}, 'none', {})
 " call <sid>hi('vimAutoCmdSfxList', s:, {}, 'none', {})
+
+" Markdown:
+" (tpope/vim-markdown)
+call <sid>hi('markdownH1', s:cdBlue, {}, 'none', {})
+call <sid>hi('markdownH2', s:cdBlue, {}, 'none', {})
+call <sid>hi('markdownH3', s:cdBlue, {}, 'none', {})
+call <sid>hi('markdownH4', s:cdBlue, {}, 'none', {})
+call <sid>hi('markdownH5', s:cdBlue, {}, 'none', {})
+call <sid>hi('markdownH6', s:cdBlue, {}, 'none', {})
+call <sid>hi('markdownItalic', s:cdLightBlue, {}, 'italic', {})
+call <sid>hi('markdownItalicDelimiter', s:cdGray, {}, 'italic', {})
+call <sid>hi('markdownBold', s:cdLightBlue, {}, 'bold', {})
+call <sid>hi('markdownBoldDelimiter', s:cdGray, {}, 'bold', {})
+call <sid>hi('markdownHeadingDelimiter', s:cdBrightBlue, {}, 'none', {})
+call <sid>hi('markdownListMarker', s:cdBrightBlue, {}, 'none', {})
+call <sid>hi('markdownBlockquote', s:cdGray, {}, 'none', {})
+call <sid>hi('markdownCode', s:cdOrange, {}, 'none', {})
+" call <sid>hi('markdownUrl', s:, {}, 'none', {})
+" call <sid>hi('markdownLinkText', s:, {}, 'none', {})
+call <sid>hi('markdownLinkTextDelimiter', s:cdGray, {}, 'none', {})
+call <sid>hi('markdownLinkDelimiter', s:cdGray, {}, 'none', {})
