@@ -257,11 +257,12 @@ call <sid>hi('jsRegexpString', s:cdLightRed, {}, 'none', {})
 call <sid>hi('jsThis', s:cdBlue, {}, 'none', {})
 
 " JSON:
+" (elzr/vim-json)
 call <sid>hi('jsonKeyword', s:cdLightBlue, {}, 'none', {})
-call <sid>hi('jsonKeywordMatch', s:cdLightBlue, {}, 'none', {})
-call <sid>hi('jsonBraces', s:cdGray, {}, 'none', {})
-call <sid>hi('jsonNoise', s:cdGray, {}, 'none', {})
-call <sid>hi('jsonQuote', s:cdGray, {}, 'none', {})
+call <sid>hi('jsonKeywordMatch', s:cdDarkGray, {}, 'none', {})
+call <sid>hi('jsonBraces', s:cdDarkGray, {}, 'none', {})
+call <sid>hi('jsonNoise', s:cdDarkGray, {}, 'none', {})
+call <sid>hi('jsonQuote', s:cdDarkGray, {}, 'none', {})
 call <sid>hi('jsonString', s:cdOrange, {}, 'none', {})
 
 " Ruby:
