@@ -252,10 +252,26 @@ call <sid>hi('cssValueLength', s:cdOrange, {}, 'none', {})
 call <sid>hi('cssUnitDecorators', s:cdOrange, {}, 'none', {})
 
 " JavaScript:
+call <sid>hi('jsFuncCall', s:cdYellow, {}, 'none', {})
 call <sid>hi('jsVariableDef', s:cdLightBlue, {}, 'none', {})
+call <sid>hi('jsParen', s:cdLightBlue, {}, 'none', {})
+call <sid>hi('jsParenRepeat', s:cdLightBlue, {}, 'none', {})
+call <sid>hi('jsParenSwitch', s:cdLightBlue, {}, 'none', {})
+call <sid>hi('jsParenIfElse', s:cdLightBlue, {}, 'none', {})
+call <sid>hi('jsSwitchColon', s:cdPink, {}, 'none', {})
+call <sid>hi('jsSpecial', s:cdYellowOrange, {}, 'none', {})
 call <sid>hi('jsFuncArgs', s:cdLightBlue, {}, 'none', {})
 call <sid>hi('jsRegexpString', s:cdLightRed, {}, 'none', {})
 call <sid>hi('jsThis', s:cdBlue, {}, 'none', {})
+call <sid>hi('jsNoise', s:cdDarkGray, {}, 'none', {})
+call <sid>hi('jsGlobalObjects', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('jsGlobalNodeObjects', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('jsObjectProp', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('jsObjectStringKey', s:cdLightBlue, {}, 'none', {})
+call <sid>hi('jsTemplateBraces', s:cdBlue, {}, 'none', {})
+call <sid>hi('jsTemplateString', s:cdOrange, {}, 'none', {})
+call <sid>hi('jsTemplateExpression', s:cdLightBlue, {}, 'none', {})
+
 
 " JSON:
 " (elzr/vim-json)
