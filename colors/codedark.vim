@@ -36,30 +36,30 @@ endfun
 " ------------------
 
 " Terminal colors (base16):
-let s:cterm00 = "00"
-let s:cterm03 = "08"
-let s:cterm05 = "07"
-let s:cterm07 = "15"
-let s:cterm08 = "01"
-let s:cterm0A = "03"
-let s:cterm0B = "02"
-let s:cterm0C = "06"
-let s:cterm0D = "04"
-let s:cterm0E = "05"
-if exists('base16colorspace') && base16colorspace == "256"
-  let s:cterm01 = "18"
-  let s:cterm02 = "19"
-  let s:cterm04 = "20"
-  let s:cterm06 = "21"
-  let s:cterm09 = "16"
-  let s:cterm0F = "17"
+let s:cterm00 = '00'
+let s:cterm03 = '08'
+let s:cterm05 = '07'
+let s:cterm07 = '15'
+let s:cterm08 = '01'
+let s:cterm0A = '03'
+let s:cterm0B = '02'
+let s:cterm0C = '06'
+let s:cterm0D = '04'
+let s:cterm0E = '05'
+if exists('base16colorspace') && base16colorspace == '256'
+  let s:cterm01 = '18'
+  let s:cterm02 = '19'
+  let s:cterm04 = '20'
+  let s:cterm06 = '21'
+  let s:cterm09 = '16'
+  let s:cterm0F = '17'
 else
-  let s:cterm01 = "00"
-  let s:cterm02 = "08"
-  let s:cterm04 = "07"
-  let s:cterm06 = "07"
-  let s:cterm09 = "06"
-  let s:cterm0F = "03"
+  let s:cterm01 = '00'
+  let s:cterm02 = '08'
+  let s:cterm04 = '07'
+  let s:cterm06 = '07'
+  let s:cterm09 = '06'
+  let s:cterm0F = '03'
 endif
 
 " General appearance colors:
@@ -104,7 +104,7 @@ let s:cdSearch = {'gui': '#4C4E50', 'cterm': s:cterm0A, 'cterm256': '239'}
 
 " Syntax colors:
 
-if !exists("g:codedark_conservative")
+if !exists('g:codedark_conservative')
     let g:codedark_conservative=0
 endif
 
@@ -215,11 +215,11 @@ call <sid>hi('SpecialComment', s:cdGreen, {}, 'none', {})
 call <sid>hi('Debug', s:cdFront, {}, 'none', {})
 
 call <sid>hi('Underlined', s:cdNone, {}, 'underline', {})
-call <sid>hi("Conceal", s:cdFront, s:cdBack, 'none', {})
+call <sid>hi('Conceal', s:cdFront, s:cdBack, 'none', {})
 
 call <sid>hi('Ignore', s:cdFront, {}, 'none', {})
 
-call <sid>hi('Error', s:cdRed, {}, 'undercurl', s:cdRed)
+call <sid>hi('Error', s:cdRed, {}, 'none', {})
 
 call <sid>hi('Todo', s:cdNone, s:cdLeftMid, 'none', {})
 
@@ -383,3 +383,48 @@ call <sid>hi('tmuxAttrInpolDelimiter', s:cdGray, {}, 'none', {})
 call <sid>hi('tmuxFmtInpolDelimiter', s:cdGray, {}, 'none', {})
 call <sid>hi('tmuxKeySymbol', s:cdFront, {}, 'none', {})
 call <sid>hi('tmuxWindowPaneCmds', s:cdYellow, {}, 'none', {})
+
+" Lua:
+" (tbastos/vim-lua)
+" call <sid>hi('luaFunc', s:, {}, 'none', {})
+" call <sid>hi('luaComma', s:, {}, 'none', {})
+" call <sid>hi('luaFuncParens', s:, {}, 'none', {})
+" call <sid>hi('luaSymbolOperator', s:, {}, 'none', {})
+call <sid>hi('luaBraces', s:cdFront, {}, 'none', {})
+call <sid>hi('luaFuncName', s:cdYellow, {}, 'none', {})
+call <sid>hi('luaString', s:cdOrange, {}, 'none', {})
+call <sid>hi('luaFuncKeyword', s:cdPink, {}, 'none', {})
+" call <sid>hi('luaTable', s:, {}, 'none', {})
+" call <sid>hi('luaFuncSig', s:, {}, 'none', {})
+call <sid>hi('luaFuncArg', s:cdLightBlue, {}, 'none', {})
+call <sid>hi('luaFuncArgName', s:cdLightBlue, {}, 'none', {})
+
+" Sh:
+call <sid>hi('shFunction', s:cdYellow, {}, 'none', {})
+call <sid>hi('shFunctionKey', s:cdPink, {}, 'none', {})
+call <sid>hi('shFunctionTwo', s:cdFront, {}, 'none', {})
+call <sid>hi('shFunctionStatement', s:cdPink, {}, 'none', {})
+call <sid>hi('shEscape', s:cdYellowOrange, {}, 'none', {})
+call <sid>hi('shCommandSub', s:cdFront, {}, 'none', {})
+call <sid>hi('shDoubleQuote', s:cdOrange, {}, 'none', {})
+call <sid>hi('shOption', s:cdFront, {}, 'none', {})
+call <sid>hi('shStatement', s:cdBlue, {}, 'none', {})
+call <sid>hi('shOperator', s:cdBack, {}, 'none', {})
+call <sid>hi('shDerefSimple', s:cdLightBlue, {}, 'none', {})
+
+" Snippet
+" (SirVer/ultisnips)
+" call <sid>hi('snipSnippet', s:cdDarkGray, {}, 'none', {})
+call <sid>hi('snipTabStop', s:cdBlue, {}, 'none', {})
+call <sid>hi('snipSnippetBody', s:cdFront, {}, 'none', {})
+" call <sid>hi('snipSnippetHeader', s:cdDarkGray, {}, 'none', {})
+" call <sid>hi('snipSnippetFooter', s:cdDarkGray, {}, 'none', {})
+call <sid>hi('snipSnippetHeaderKeyword', s:cdGray, {}, 'none', {})
+call <sid>hi('snipSnippetFooterKeyword', s:cdGray, {}, 'none', {})
+" call <sid>hi('snipSnippetOptions', s:, {}, 'none', {})
+call <sid>hi('snipSnippetOptionFlag', s:cdPink, {}, 'none', {})
+call <sid>hi('snipEscape', s:cdYellowOrange, {}, 'none', {})
+call <sid>hi('snipLeadingSpaces', s:cdBack, {}, 'none', {})
+
+
+
