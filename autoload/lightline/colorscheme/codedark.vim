@@ -4,15 +4,15 @@
 " License: MIT License
 " Last Change: 2017/10/11.
 " =============================================================================
-let s:base03 = '#fafafa'
+let s:base03  = '#fafafa'
 let s:base023 = '#dfdfdf'
-let s:base02 = '#c8c8c8'
-let s:base01 = '#b4b4b4'
-let s:base00 = '#808080'
-let s:base0 = '#666666'
-let s:base1 = '#555555'
-let s:base2 = '#4f4f4f'
-let s:base3 = '#4d4d4c'
+let s:base02  = '#c8c8c8'
+let s:base01  = '#b4b4b4'
+let s:base00  = '#808080'
+let s:base0   = '#666666'
+let s:base1   = '#555555'
+let s:base2   = '#4f4f4f'
+let s:base3   = '#4d4d4c'
 
 
 let s:cdBack = '#1E1E1E'
