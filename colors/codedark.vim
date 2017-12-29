@@ -264,6 +264,10 @@ call <sid>hi('cssValueNumber',     s:cdOrange,       {}, 'none', {})
 call <sid>hi('cssValueLength',     s:cdOrange,       {}, 'none', {})
 call <sid>hi('cssUnitDecorators',  s:cdOrange,       {}, 'none', {})
 
+" Gitconfig:
+call <sid>hi('gitconfigNone',      s:cdFront,        {}, 'none', {})
+call <sid>hi('gitconfigEscape',    s:cdYellowOrange, {}, 'none', {})
+
 " Golang:
 call <sid>hi('goStatement',             s:cdPink,      {}, 'none', {})
 call <sid>hi('goPackage',               s:cdBlue,      {}, 'none', {})
