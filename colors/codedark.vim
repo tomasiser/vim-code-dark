@@ -1,6 +1,5 @@
 " ==============================================================================
 " FILE: Vim Code Dark (color scheme)
-" Author: Tomáš Iser
 " License: MIT License
 " Last Modified: 2018-01-23
 " Website: https://github.com/tomasiser/vim-code-dark
@@ -328,18 +327,18 @@ call <sid>hi('jsonEscape',       s:cdYellowOrange, {}, 'none', {})
 
 " Lua:
 " (tbastos/vim-lua)
+hi link luaFuncName    Function
+hi link luaString      String
+hi link luaFuncArg     Identifier
+hi link luaFuncArgName Identifier
 call <sid>hi('luaFunc',           {},            {}, 'none', {})
 call <sid>hi('luaComma',          {},            {}, 'none', {})
 call <sid>hi('luaFuncParens',     {},            {}, 'none', {})
 call <sid>hi('luaSymbolOperator', {},            {}, 'none', {})
 call <sid>hi('luaBraces',         s:cdFront,     {}, 'none', {})
-hi link luaFuncName Function
-hi link luaString   String
 call <sid>hi('luaFuncKeyword',    s:cdPink,      {}, 'none', {})
 call <sid>hi('luaTable',          {},            {}, 'none', {})
 call <sid>hi('luaFuncSig',        {},            {}, 'none', {})
-hi link luaFuncArg     Identifier
-hi link luaFuncArgName Identifier
 
 " Markdown:
 " (tpope/vim-markdown)
@@ -388,53 +387,53 @@ call <sid>hi('mkdDelimiter',        s:cdGray,      {}, 'none',        {})
 
 
 " Python:
+hi link pythonComment      Comment
+hi link pythonCommentTitle SpecialComment
+hi link pythonAttribute    Identifier
+hi link pythonFunction     Function
+hi link pythonClassName    Type
+hi link pythonBuiltinObj   Type
+hi link pythonNumber       Number
+hi link pythonString       String
+hi link pythonRawString    String
+hi link pythonFString      String
+hi link pythonStrFormat    Identifier
 call <sid>hi('pythonRun',             s:cdBlue,         {}, 'none',   {})
 call <sid>hi('pythonCoding',          s:cdBlue,         {}, 'none',   {})
 call <sid>hi('pythonClassVar',        s:cdBlue,         {}, 'italic', {})
 call <sid>hi('pythonDot',             s:cdLightBlue,    {}, 'none',   {})
-hi link pythonCommentTitle SpecialComment
-hi link pythonAttribute Identifier
-hi link pythonFunction Function
-hi link pythonClassName Type
-hi link pythonBuiltinObj Type
 call <sid>hi('pythonBuiltinFunc',     s:cdBlue,         {}, 'none',   {})
 call <sid>hi('pythonInclude',         s:cdPink,         {}, 'none',   {})
 call <sid>hi('pythonOperator',        s:cdPink,         {}, 'none',   {})
 call <sid>hi('pythonStatement',       s:cdPink,         {}, 'none',   {})
-hi link pythonNumber Number
-hi link pythonString String
-hi link pythonRawString String
-hi link pythonFString String
-hi link pythonStrFormat Identifier
 call <sid>hi('pythonStrFormatting',   s:cdYellowOrange, {}, 'none',   {})
 call <sid>hi('pythonEscape',          s:cdYellowOrange, {}, 'none',   {})
 call <sid>hi('pythonRawEscape',       s:cdYellowOrange, {}, 'none',   {})
 call <sid>hi('pythonBytesEscape',     s:cdYellowOrange, {}, 'none',   {})
-hi link pythonComment Comment
 " (tweekmonster/impsort.vim)
-hi link pythonImport Conditional
-hi link pythonImportedModule Identifier
-hi link pythonIncludeLine Type
-hi link pythonImportedObject Type
+hi link pythonImport          Conditional
+hi link pythonImportedModule  Identifier
+hi link pythonIncludeLine     Type
+hi link pythonImportedObject  Type
 hi link pythonImportedFuncDef Function
 
 " Ruby:
 call <sid>hi('rubyClassNameTag',    s:cdBlueGreen,    {}, 'none', {})
 
 " Sh:
-hi link shFunction Function
+hi link shQuote       String
+hi link shDoubleQuote String
+hi link shFunction    Function
+hi link shConditional Conditional
 call <sid>hi('shFunctionKey',       s:cdPink,         {}, 'none',   {})
 call <sid>hi('shFunctionOne',       s:cdFront,        {}, 'none',   {})
 call <sid>hi('shFunctionTwo',       s:cdFront,        {}, 'none',   {})
 call <sid>hi('shFunctionStatement', s:cdPink,         {}, 'none',   {})
 call <sid>hi('shEscape',            s:cdYellowOrange, {}, 'none',   {})
 call <sid>hi('shSpecial',           s:cdYellowOrange, {}, 'none',   {})
-hi link shConditional Conditional
 call <sid>hi('shCommandSub',        {},               {}, 'none',   {})
 call <sid>hi('shCmdParenRegion',    {},               {}, 'none',   {})
 call <sid>hi('shCmdSubRegion',      {},               {}, 'none',   {})
-hi link shQuote String
-hi link shDoubleQuote String
 call <sid>hi('shOption',            s:cdPink,         {}, 'none',   {})
 call <sid>hi('shStatement',         s:cdBlue,         {}, 'none',   {})
 call <sid>hi('shDeref',             s:cdFront,        {}, 'none',   {})
@@ -502,7 +501,7 @@ call <sid>hi('CSVColumnHeaderEven', s:cdBack,         s:cdBlue, 'none', {})
 call <sid>hi('CSVColumnHeaderOdd',  s:cdBack,         s:cdGreen,'none', {})
 
 " VimL: {{{
-hi link vimCtrlChar cdYellowOrange
+hi link vimLineComment Comment
 call <sid>hi('vimEcho',           s:cdYellow,       {}, 'none',   {})
 call <sid>hi('vimVar',            s:cdLightBlue,    {}, 'none',   {})
 call <sid>hi('vimEnvVar',         s:cdLightBlue,    {}, 'italic', {})
@@ -513,7 +512,6 @@ call <sid>hi('vimUserAttrbKey',   s:cdYellow,       {}, 'none',   {})
 call <sid>hi('vimFunction',       s:cdYellow,       {}, 'none',   {})
 call <sid>hi('vimFunctionError',  s:cdRed,          {}, 'none',   {})
 call <sid>hi('vimContinue',       s:cdGray,         {}, 'none',   {})
-hi link vimLineComment Comment
 call <sid>hi('vimCommentTitle',   s:cdGreen,        {}, 'italic', {})
 call <sid>hi('vimBracket',        s:cdGray,         {}, 'none',   {})
 call <sid>hi('vimNotFunc',        s:cdPink,         {}, 'none',   {})
@@ -593,9 +591,8 @@ call <sid>hi('zshParentheses', s:cdFront,     {}, 'none', {})
 call <sid>hi('zshVariableDef', s:cdLightBlue, {}, 'none', {})
 call <sid>hi('zshParentheses', s:cdFront,     {}, 'none', {})
 
-
 " ==============================================================================
-" Plugins:
+"  === Plugins ===
 " ==============================================================================
 
 " Vimwiki:
@@ -634,10 +631,6 @@ call <sid>hi('org_list_unordered',    s:cdBlue,         {}, 'none', {})
 call <sid>hi('org_list_ckeckbox',     s:cdBlue,         {}, 'none', {})
 call <sid>hi('org_todo_keyword_done', s:cdBlue,         {}, 'none', {})
 
-
-" ==============================================================================
-"  === Plugins ===
-" ==============================================================================
 " Ale:
 " (w0rp/ale)
 call <sid>hi('ALEInfo',             {},               {},       'none', {})
@@ -660,14 +653,6 @@ call <sid>hi('BookmarkSign',           s:cdBlueGreen, s:cdBack, 'none', {})
 call <sid>hi('BookmarkAnnotationSign', s:cdBlueGreen, s:cdBack, 'none', {})
 call <sid>hi('BookmarkLine',           {},            {},       'none', {})
 call <sid>hi('BookmarkAnnotationLine', {},            {},       'none', {})
-
-
-" Buftabline:
-" (ap/vim-buftabline)
-call <sid>hi('BufTabLineCurrent', s:cdBack,  s:cdGreen,'none', {})
-call <sid>hi('BufTabLineActive',  s:cdGreen, s:cdGray, 'none', {})
-call <sid>hi('BufTabLineHidden',  s:cdFront, s:cdGray, 'none', {})
-call <sid>hi('BufTabLineFill',    {},        s:cdGray, 'none', {})
 
 " Cheat40:
 call <sid>hi('Cheat40Descr',        {},               {}, 'none',   {})
@@ -732,11 +717,6 @@ call <sid>hi('StartifySelect',  {},             {}, 'none', {})
 call <sid>hi('StartifyHeader',  {},             {}, 'none', {})
 call <sid>hi('StartifySection', s:cdPink,       {}, 'none', {})
 
-" Swoop:
-" (pelodelfuego/vim-swoop)
-" call <sid>hi('SwoopBufferLineHi', s:, {}, 'none', {})
-" call <sid>hi('SwoopPatternHi', s:, {}, 'none', {})
-
 " Tagbar:
 " (majutsushi/tagbar)
 call <sid>hi('TagbarHelp',       s:cdGray,       {}, 'none',   {})
@@ -753,14 +733,14 @@ call <sid>hi('TagbarHighlight',  {},             {}, 'italic', {})
 
 " VimFiler:
 " (romgrk/vimfiler-prompt)
-call <sid>hi('FilerCursor',           s:cdGray,       {}, 'none', {})
-call <sid>hi('FilerSelected',         s:cdGray,       {}, 'none', {})
-call <sid>hi('FilerActive',           s:cdGray,       {}, 'none', {})
-call <sid>hi('FilerMatch',            {},             {}, 'none', {})
-call <sid>hi('FilerNoMatch',          {},             {}, 'none', {})
-call <sid>hi('FilerPrompt',           s:cdBlueGreen,  {}, 'none', {})
-call <sid>hi('FilerInput',            s:cdGray,       {}, 'none', {})
-call <sid>hi('FilerCompletion',       s:cdGray,       {}, 'none', {})
+call <sid>hi('FilerCursor',      s:cdGray,       {}, 'none', {})
+call <sid>hi('FilerSelected',    s:cdGray,       {}, 'none', {})
+call <sid>hi('FilerActive',      s:cdGray,       {}, 'none', {})
+call <sid>hi('FilerMatch',       {},             {}, 'none', {})
+call <sid>hi('FilerNoMatch',     {},             {}, 'none', {})
+call <sid>hi('FilerPrompt',      s:cdBlueGreen,  {}, 'none', {})
+call <sid>hi('FilerInput',       s:cdGray,       {}, 'none', {})
+call <sid>hi('FilerCompletion',  s:cdGray,       {}, 'none', {})
 " (Shougo/vimfiler)
 call <sid>hi('vimfilerStatus',           {},                 {}, 'none',   {})
 call <sid>hi('vimfilerColumn__devicons', s:cdGray,           {}, 'none',   {})
