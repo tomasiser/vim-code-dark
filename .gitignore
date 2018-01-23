@@ -23,7 +23,4 @@ ignore/**
 
 # other
 !.gitkeep
-**/*.map
-npm-debug.log
-npm-debug.log.*
 **/tags
