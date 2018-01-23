@@ -1,5 +1,6 @@
 " ==============================================================================
-" FILE: Vim Code Dark (color scheme)
+" Vim Code Dark (color scheme)
+" FILE: codedark.vim
 " License: MIT License
 " Last Modified: 2018-01-23
 " Website: https://github.com/tomasiser/vim-code-dark
