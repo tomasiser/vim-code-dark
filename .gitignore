@@ -1,0 +1,26 @@
+#   ┌─┐┬┌┬┐┬┌─┐┌┐┌┌─┐┬─┐┌─┐
+#   │ ┬│ │ ││ ┬││││ │├┬┘├┤
+#  o└─┘┴ ┴ ┴└─┘┘└┘└─┘┴└─└─┘
+
+# dependencies
+
+# ignore built files
+build/**
+dist/**
+
+# mac system files
+Icon?
+.DS_Store
+
+# private files
+.env
+.variables
+ignore/**
+
+# editor settings
+.vscode
+.idea
+
+# other
+!.gitkeep
+**/tags
