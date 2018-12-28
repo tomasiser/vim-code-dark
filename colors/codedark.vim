@@ -255,6 +255,9 @@ call <sid>hi('jsThis', s:cdBlue, {}, 'none', {})
 
 " Ruby:
 call <sid>hi('rubyClassNameTag', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('rubyClassName', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('rubyModuleName', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('rubyConstant', s:cdBlueGreen, {}, 'none', {})
 
 " Golang:
 call <sid>hi('goPackage', s:cdBlue, {}, 'none', {})
