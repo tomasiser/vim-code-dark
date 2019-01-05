@@ -220,6 +220,12 @@ call <sid>hi('Error', s:cdRed, s:cdBack, 'undercurl', s:cdRed)
 
 call <sid>hi('Todo', s:cdNone, s:cdLeftMid, 'none', {})
 
+" JSON:
+call <sid>hi('jsonKeyword', s:cdLightBlue, {}, 'none', {})
+call <sid>hi('jsonEscape', s:cdYellowOrange, {}, 'none', {})
+call <sid>hi('jsonNull', s:cdBlue, {}, 'none', {})
+call <sid>hi('jsonBoolean', s:cdBlue, {}, 'none', {})
+
 " HTML:
 call <sid>hi('htmlTag', s:cdGray, {}, 'none', {})
 call <sid>hi('htmlEndTag', s:cdGray, {}, 'none', {})
