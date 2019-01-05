@@ -263,6 +263,11 @@ call <sid>hi('jsDestructuringBlock', s:cdLightBlue, {}, 'none', {})
 call <sid>hi('jsObjectKey', s:cdLightBlue, {}, 'none', {})
 call <sid>hi('jsGlobalObjects', s:cdBlueGreen, {}, 'none', {})
 
+" XML:
+call <sid>hi('xmlTag', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('xmlTagName', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('xmlEndTag', s:cdBlueGreen, {}, 'none', {})
+
 " Ruby:
 call <sid>hi('rubyClassNameTag', s:cdBlueGreen, {}, 'none', {})
 call <sid>hi('rubyClassName', s:cdBlueGreen, {}, 'none', {})
