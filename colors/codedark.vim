@@ -262,6 +262,7 @@ call <sid>hi('jsThis', s:cdBlue, {}, 'none', {})
 call <sid>hi('jsDestructuringBlock', s:cdLightBlue, {}, 'none', {})
 call <sid>hi('jsObjectKey', s:cdLightBlue, {}, 'none', {})
 call <sid>hi('jsGlobalObjects', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('jsModuleKeyword', s:cdLightBlue, {}, 'none', {})
 
 " Ruby:
 call <sid>hi('rubyClassNameTag', s:cdBlueGreen, {}, 'none', {})
