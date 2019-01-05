@@ -220,6 +220,17 @@ call <sid>hi('Error', s:cdRed, s:cdBack, 'undercurl', s:cdRed)
 
 call <sid>hi('Todo', s:cdNone, s:cdLeftMid, 'none', {})
 
+" Markdown:
+call <sid>hi('markdownBold', s:cdBlue, {}, 'bold', {})
+call <sid>hi('markdownCode', s:cdOrange, {}, 'none', {})
+call <sid>hi('markdownRule', s:cdBlue, {}, 'bold', {})
+call <sid>hi('markdownCodeDelimiter', s:cdOrange, {}, 'none', {})
+call <sid>hi('markdownHeadingDelimiter', s:cdBlue, {}, 'none', {})
+call <sid>hi('markdownFootnote', s:cdOrange, {}, 'none', {})
+call <sid>hi('markdownFootnoteDefinition', s:cdOrange, {}, 'none', {})
+call <sid>hi('markdownUrl', s:cdLightBlue, {}, 'underline', {})
+call <sid>hi('markdownLinkText', s:cdOrange, {}, 'none', {})
+
 " JSON:
 call <sid>hi('jsonKeyword', s:cdLightBlue, {}, 'none', {})
 call <sid>hi('jsonEscape', s:cdYellowOrange, {}, 'none', {})
