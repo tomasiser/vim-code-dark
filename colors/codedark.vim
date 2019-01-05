@@ -269,6 +269,7 @@ call <sid>hi('jsExtendsKeyword', s:cdBlue, {}, 'none', {})
 call <sid>hi('jsExportDefault', s:cdPink, {}, 'none', {})
 call <sid>hi('jsFuncCall', s:cdYellow, {}, 'none', {})
 call <sid>hi('jsObjectKey', s:cdYellow, {}, 'none', {})
+call <sid>hi('jsObjectValue', s:cdLightBlue, {}, 'none', {})
 
 " Ruby:
 call <sid>hi('rubyClassNameTag', s:cdBlueGreen, {}, 'none', {})
