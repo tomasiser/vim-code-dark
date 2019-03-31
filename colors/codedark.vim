@@ -343,3 +343,16 @@ call <sid>hi('texBeginEndModifier', s:cdLightBlue, {}, 'none', {})
 call <sid>hi('texDocType', s:cdPink, {}, 'none', {})
 call <sid>hi('texDocTypeArgs', s:cdLightBlue, {}, 'none', {})
 
+" Git:
+call <sid>hi('gitcommitHeader', s:cdGray, {}, 'none', {})
+call <sid>hi('gitcommitOnBranch', s:cdGray, {}, 'none', {})
+call <sid>hi('gitcommitBranch', s:cdPink, {}, 'none', {})
+call <sid>hi('gitcommitComment', s:cdGray, {}, 'none', {})
+call <sid>hi('gitcommitSelectedType', s:cdGreen, {}, 'none', {})
+call <sid>hi('gitcommitSelectedFile', s:cdGreen, {}, 'none', {})
+call <sid>hi('gitcommitDiscardedType', s:cdRed, {}, 'none', {})
+call <sid>hi('gitcommitDiscardedFile', s:cdRed, {}, 'none', {})
+call <sid>hi('gitcommitOverflow', s:cdRed, {}, 'none', {})
+call <sid>hi('gitcommitSummary', s:cdPink, {}, 'none', {})
+call <sid>hi('gitcommitBlank', s:cdPink, {}, 'none', {})
+
