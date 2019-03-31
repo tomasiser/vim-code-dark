@@ -353,5 +353,6 @@ call <sid>hi('gitcommitSelectedFile', s:cdGreen, {}, 'none', {})
 call <sid>hi('gitcommitDiscardedType', s:cdRed, {}, 'none', {})
 call <sid>hi('gitcommitDiscardedFile', s:cdRed, {}, 'none', {})
 call <sid>hi('gitcommitOverflow', s:cdRed, {}, 'none', {})
-call <sid>hi('gitcommitSummary', {}, {}, 'none', {})
-call <sid>hi('gitcommitBlank', {}, {}, 'none', {})
+call <sid>hi('gitcommitSummary', s:cdPink, {}, 'none', {})
+call <sid>hi('gitcommitBlank', s:cdPink, {}, 'none', {})
+
