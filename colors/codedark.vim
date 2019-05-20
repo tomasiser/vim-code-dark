@@ -279,7 +279,7 @@ call <sid>hi('jsClassKeyword', s:cdBlue, {}, 'none', {})
 call <sid>hi('jsExtendsKeyword', s:cdBlue, {}, 'none', {})
 call <sid>hi('jsExportDefault', s:cdPink, {}, 'none', {})
 call <sid>hi('jsFuncCall', s:cdYellow, {}, 'none', {})
-call <sid>hi('jsObjectKey', s:cdYellow, {}, 'none', {})
+call <sid>hi('jsObjectKey', s:cdLightBlue, {}, 'none', {})
 call <sid>hi('jsObjectValue', s:cdLightBlue, {}, 'none', {})
 call <sid>hi('jsParen', s:cdLightBlue, {}, 'none', {})
 
@@ -356,3 +356,8 @@ call <sid>hi('gitcommitOverflow', s:cdRed, {}, 'none', {})
 call <sid>hi('gitcommitSummary', s:cdPink, {}, 'none', {})
 call <sid>hi('gitcommitBlank', s:cdPink, {}, 'none', {})
 
+" Lua:
+call <sid>hi('luaFuncCall', s:cdYellow, {}, 'none', {})
+call <sid>hi('luaFuncArgName', s:cdLightBlue, {}, 'none', {})
+call <sid>hi('luaFuncKeyword', s:cdPink, {}, 'none', {})
+call <sid>hi('luaLocal', s:cdPink, {}, 'none', {})
