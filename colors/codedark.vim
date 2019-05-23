@@ -283,6 +283,7 @@ call <sid>hi('jsFuncCall', s:cdYellow, {}, 'none', {})
 call <sid>hi('jsObjectKey', s:cdLightBlue, {}, 'none', {})
 call <sid>hi('jsObjectValue', s:cdLightBlue, {}, 'none', {})
 call <sid>hi('jsParen', s:cdLightBlue, {}, 'none', {})
+call <sid>hi('jsObjectProp', s:cdLightBlue, {}, 'none', {})
 
 " XML:
 call <sid>hi('xmlTag', s:cdBlueGreen, {}, 'none', {})
