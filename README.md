@@ -104,6 +104,21 @@ iTerm2 should actually support 256 colors, try setting `Report Terminal Type` to
 ##### 3.3.3) PuTTY
 PuTTY should actually support 256 colors, try following [steps on StackOverflow](http://superuser.com/questions/436910/emulate-256-colors-in-putty-terminal). If it does not work, run `base16/templates/putty/putty/base16-codedark.reg` to modify your registry, then run PuTTY and load `codedark` in the session list. This will modify your PuTTY terminal colors.
 
+##### 3.3.3) Transparency / background color
+The default background color is a dark grey. If you prefer it to be black use:
+
+```
+let g:codedark_cterm_background='0'
+let g:codedark_cterm_taboutside='0'
+```
+
+Likewise, if you prefer a transparent background to allow opacity through your terminal:
+
+```
+let g:codedark_cterm_background='NONE'
+let g:codedark_cterm_taboutside='NONE'
+```
+
 ## FAQ
 
 ### The background color in my terminal is wrong when there is no text!

@@ -31,6 +31,13 @@ fun! <sid>hi(group, fg, bg, attr, sp)
   endif
 endfun
 
+if !exists("g:codedark_cterm_background")
+    let g:codedark_cterm_background='234'
+endif
+if !exists("g:codedark_cterm_taboutside")
+    let g:codedark_cterm_taboutside='235'
+endif
+
 " ------------------
 " Color definitions:
 " ------------------
@@ -67,11 +74,11 @@ endif
 
 let s:cdNone = {'gui': 'NONE', 'cterm': 'NONE', 'cterm256': 'NONE'}
 let s:cdFront = {'gui': '#D4D4D4', 'cterm': s:cterm05, 'cterm256': '188'}
-let s:cdBack = {'gui': '#1E1E1E', 'cterm': s:cterm00, 'cterm256': '234'}
+let s:cdBack = {'gui': '#1E1E1E', 'cterm': s:cterm00, 'cterm256': g:codedark_cterm_background}
 
 let s:cdTabCurrent = {'gui': '#1E1E1E', 'cterm': s:cterm00, 'cterm256': '234'}
 let s:cdTabOther = {'gui': '#2D2D2D', 'cterm': s:cterm01, 'cterm256': '236'}
-let s:cdTabOutside = {'gui': '#252526', 'cterm': s:cterm01, 'cterm256': '235'}
+let s:cdTabOutside = {'gui': '#252526', 'cterm': s:cterm01, 'cterm256': g:codedark_cterm_taboutside}
 
 let s:cdLeftDark = {'gui': '#252526', 'cterm': s:cterm01, 'cterm256': '235'}
 let s:cdLeftMid = {'gui': '#373737', 'cterm': s:cterm03, 'cterm256': '237'}
