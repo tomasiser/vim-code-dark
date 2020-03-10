@@ -81,6 +81,7 @@ let s:cdPopupFront = {'gui': '#BBBBBB', 'cterm': s:cterm06, 'cterm256': '250'}
 let s:cdPopupBack = {'gui': '#2D2D30', 'cterm': s:cterm01, 'cterm256': '236'}
 let s:cdPopupHighlightBlue = {'gui': '#073655', 'cterm': s:cterm0D, 'cterm256': '24'}
 let s:cdPopupHighlightGray = {'gui': '#3D3D40', 'cterm': s:cterm03, 'cterm256': '237'}
+"let s:cdPopupHighlightBlue = {'gui': '#073655', 'cterm': s:cterm0D, 'cterm256': '24'}
 
 let s:cdSplitLight = {'gui': '#898989', 'cterm': s:cterm04, 'cterm256': '245'}
 let s:cdSplitDark = {'gui': '#444444', 'cterm': s:cterm03, 'cterm256': '238'}
@@ -110,6 +111,7 @@ endif
 let s:cdGray = {'gui': '#808080', 'cterm': s:cterm04, 'cterm256': '08'}
 let s:cdViolet = {'gui': '#646695', 'cterm': s:cterm04, 'cterm256': '60'}
 let s:cdBlue = {'gui': '#569CD6', 'cterm': s:cterm0D, 'cterm256': '75'}
+let s:cdCyan = { 'gui':'#74dad9', 'cterm': s:cterm0C, 'cterm256': '44' }
 let s:cdDarkBlue = {'gui': '#223E55', 'cterm': s:cterm0D, 'cterm256': '73'}
 let s:cdLightBlue = {'gui': '#9CDCFE', 'cterm': s:cterm0C, 'cterm256': '117'}
 if g:codedark_conservative | let s:cdLightBlue = s:cdFront | endif
@@ -125,6 +127,7 @@ let s:cdYellow = {'gui': '#DCDCAA', 'cterm': s:cterm0A, 'cterm256': '187'}
 if g:codedark_conservative | let s:cdYellow = s:cdFront | endif
 let s:cdPink = {'gui': '#C586C0', 'cterm': s:cterm0E, 'cterm256': '176'}
 if g:codedark_conservative | let s:cdPink = s:cdBlue | endif
+let s:cdSilver = {'gui': '#C0C0C0', 'cterm': s:cterm05, 'cterm256': '7'}
 
 " Vim editor colors
 "    <sid>hi(GROUP, FOREGROUND, BACKGROUND, ATTRIBUTE, SPECIAL)
@@ -192,16 +195,17 @@ call <sid>hi('Operator', s:cdFront, {}, 'none', {})
 call <sid>hi('Keyword', s:cdPink, {}, 'none', {})
 call <sid>hi('Exception', s:cdPink, {}, 'none', {})
 
-call <sid>hi('PreProc', s:cdPink, {}, 'none', {})
-call <sid>hi('Include', s:cdPink, {}, 'none', {})
-call <sid>hi('Define', s:cdPink, {}, 'none', {})
-call <sid>hi('Macro', s:cdPink, {}, 'none', {})
-call <sid>hi('PreCondit', s:cdPink, {}, 'none', {})
+call <sid>hi('PreProc', s:cdGray, {}, 'none', {})
+call <sid>hi('Include', s:cdGray, {}, 'none', {})
+call <sid>hi('Define', s:cdGray, {}, 'none', {})
+call <sid>hi('Macro', s:cdGray, {}, 'none', {})
+call <sid>hi('PreCondit', s:cdGray, {}, 'none', {})
 
 call <sid>hi('Type', s:cdBlue, {}, 'none', {})
 call <sid>hi('StorageClass', s:cdBlue, {}, 'none', {})
 call <sid>hi('Structure', s:cdBlue, {}, 'none', {})
 call <sid>hi('Typedef', s:cdBlue, {}, 'none', {})
+call <sid>hi('ClassType', s:cdCyan, {}, 'none', {})
 
 call <sid>hi('Special', s:cdFront, {}, 'none', {})
 call <sid>hi('SpecialChar', s:cdFront, {}, 'none', {})
@@ -436,9 +440,19 @@ call <sid>hi('StructDecl', s:cdBlueGreen, {}, 'none', {})
 call <sid>hi('UnionDecl', s:cdBlueGreen, {}, 'none', {})
 call <sid>hi('ClassDecl', s:cdBlueGreen, {}, 'none', {})
 call <sid>hi('TypeRef', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('TypedefDecl', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('TypeAliasDecl', s:cdBlueGreen, {}, 'none', {})
 call <sid>hi('EnumDecl', s:cdBlueGreen, {}, 'none', {})
 call <sid>hi('TemplateTypeParameter', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('TypeAliasTemplateDecl', s:cdBlueGreen, {}, 'none', {})
 call <sid>hi('ClassTemplate', s:cdBlueGreen, {}, 'none', {})
-call <sid>hi('TemplateRef', s:cdBlueGreen, {}, 'none', {})
 call <sid>hi('ClassTemplatePartialSpecialization', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('FunctionTemplate', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('TemplateRef', s:cdBlueGreen, {}, 'none', {})
 call <sid>hi('TemplateTemplateParameter', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('UsingDeclaration', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('MemberRef', s:cdLightBlue, {}, 'italic', {})
+call <sid>hi('MemberRefExpr', s:cdYellow, {}, 'italic', {})
+call <sid>hi('Namespace', s:cdSilver, {}, 'none', {})
+call <sid>hi('NamespaceRef', s:cdSilver, {}, 'none', {})
+call <sid>hi('NamespaceAlias', s:cdSilver, {}, 'none', {})
