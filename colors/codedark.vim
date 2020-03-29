@@ -430,3 +430,6 @@ call <sid>hi('luaFuncArgName', s:cdLightBlue, {}, 'none', {})
 call <sid>hi('luaFuncKeyword', s:cdPink, {}, 'none', {})
 call <sid>hi('luaLocal', s:cdPink, {}, 'none', {})
 call <sid>hi('luaBuiltIn', s:cdBlue, {}, 'none', {})
+" YAML:
+call <sid>hi('yamlKey', s:cdBlue, {}, 'none', {})
+call <sid>hi('yamlConstant', s:cdBlue, {}, 'none', {})
