@@ -81,6 +81,7 @@ let s:cdPopupFront = {'gui': '#BBBBBB', 'cterm': s:cterm06, 'cterm256': '250'}
 let s:cdPopupBack = {'gui': '#2D2D30', 'cterm': s:cterm01, 'cterm256': '236'}
 let s:cdPopupHighlightBlue = {'gui': '#073655', 'cterm': s:cterm0D, 'cterm256': '24'}
 let s:cdPopupHighlightGray = {'gui': '#3D3D40', 'cterm': s:cterm03, 'cterm256': '237'}
+"let s:cdPopupHighlightBlue = {'gui': '#073655', 'cterm': s:cterm0D, 'cterm256': '24'}
 
 let s:cdSplitLight = {'gui': '#898989', 'cterm': s:cterm04, 'cterm256': '245'}
 let s:cdSplitDark = {'gui': '#444444', 'cterm': s:cterm03, 'cterm256': '238'}
@@ -89,7 +90,8 @@ let s:cdSplitThumb = {'gui': '#424242', 'cterm': s:cterm04, 'cterm256': '238'}
 let s:cdCursorDarkDark = {'gui': '#222222', 'cterm': s:cterm01, 'cterm256': '235'}
 let s:cdCursorDark = {'gui': '#51504F', 'cterm': s:cterm03, 'cterm256': '239'}
 let s:cdCursorLight = {'gui': '#AEAFAD', 'cterm': s:cterm04, 'cterm256': '145'}
-let s:cdSelection = {'gui': '#264F78', 'cterm': s:cterm03, 'cterm256': '24'}
+" let s:cdSelection = {'gui': '#264F78', 'cterm': s:cterm03, 'cterm256': '24'}
+let s:cdSelection = {'gui': '#264F78', 'cterm': s:cterm03, 'cterm256': '26'}
 let s:cdLineNumber = {'gui': '#5A5A5A', 'cterm': s:cterm04, 'cterm256': '240'}
 
 let s:cdDiffRedDark = {'gui': '#4B1818', 'cterm': s:cterm08, 'cterm256': '52'}
@@ -98,8 +100,11 @@ let s:cdDiffRedLightLight = {'gui': '#FB0101', 'cterm': s:cterm08, 'cterm256': '
 let s:cdDiffGreenDark = {'gui': '#373D29', 'cterm': s:cterm0B, 'cterm256': '237'}
 let s:cdDiffGreenLight = {'gui': '#4B5632', 'cterm': s:cterm09, 'cterm256': '58'}
 
-let s:cdSearchCurrent = {'gui': '#49545F', 'cterm': s:cterm09, 'cterm256': '236'}
-let s:cdSearch = {'gui': '#4C4E50', 'cterm': s:cterm0A, 'cterm256': '236'}
+" let s:cdSearchCurrent = {'gui': '#49545F', 'cterm': s:cterm09, 'cterm256': '236'}
+" let s:cdSearch = {'gui': '#4C4E50', 'cterm': s:cterm0A, 'cterm256': '236'}
+
+let s:cdSearchCurrent = {'gui': 'peru', 'cterm': 'Yellow', 'cterm256': '226'}
+let s:cdSearch = {'gui': 'wheat', 'cterm': 'LightYellow', 'cterm256': '226'}
 
 " Syntax colors:
 
@@ -110,6 +115,7 @@ endif
 let s:cdGray = {'gui': '#808080', 'cterm': s:cterm04, 'cterm256': '08'}
 let s:cdViolet = {'gui': '#646695', 'cterm': s:cterm04, 'cterm256': '60'}
 let s:cdBlue = {'gui': '#569CD6', 'cterm': s:cterm0D, 'cterm256': '75'}
+let s:cdCyan = { 'gui':'#74dad9', 'cterm': s:cterm0C, 'cterm256': '44' }
 let s:cdDarkBlue = {'gui': '#223E55', 'cterm': s:cterm0D, 'cterm256': '73'}
 let s:cdLightBlue = {'gui': '#9CDCFE', 'cterm': s:cterm0C, 'cterm256': '117'}
 if g:codedark_conservative | let s:cdLightBlue = s:cdFront | endif
@@ -125,6 +131,7 @@ let s:cdYellow = {'gui': '#DCDCAA', 'cterm': s:cterm0A, 'cterm256': '187'}
 if g:codedark_conservative | let s:cdYellow = s:cdFront | endif
 let s:cdPink = {'gui': '#C586C0', 'cterm': s:cterm0E, 'cterm256': '176'}
 if g:codedark_conservative | let s:cdPink = s:cdBlue | endif
+let s:cdSilver = {'gui': '#C0C0C0', 'cterm': s:cterm05, 'cterm256': '7'}
 
 " Vim editor colors
 "    <sid>hi(GROUP, FOREGROUND, BACKGROUND, ATTRIBUTE, SPECIAL)
@@ -144,7 +151,7 @@ call <sid>hi('VertSplit', s:cdSplitDark, s:cdBack, 'none', {})
 call <sid>hi('Folded', s:cdLeftLight, s:cdLeftDark, 'underline', {})
 call <sid>hi('FoldColumn', s:cdLineNumber, s:cdBack, 'none', {})
 call <sid>hi('SignColumn', {}, s:cdBack, 'none', {})
-call <sid>hi('IncSearch', s:cdNone, s:cdSearchCurrent, 'none', {})
+call <sid>hi('IncSearch', s:cdBack, s:cdSearchCurrent, 'none', {})
 call <sid>hi('LineNr', s:cdLineNumber, s:cdBack, 'none', {})
 call <sid>hi('CursorLineNr', s:cdPopupFront, s:cdBack, 'none', {})
 call <sid>hi('MatchParen', s:cdNone, s:cdCursorDark, 'none', {})
@@ -156,7 +163,7 @@ call <sid>hi('PmenuSel', s:cdPopupFront, s:cdPopupHighlightBlue, 'none', {})
 call <sid>hi('PmenuSbar', {}, s:cdPopupHighlightGray, 'none', {})
 call <sid>hi('PmenuThumb', {}, s:cdPopupFront, 'none', {})
 call <sid>hi('Question', s:cdBlue, s:cdBack, 'none', {})
-call <sid>hi('Search', s:cdNone, s:cdSearch, 'none', {})
+call <sid>hi('Search', s:cdBack, s:cdSearch, 'none', {})
 call <sid>hi('SpecialKey', s:cdBlue, s:cdNone, 'none', {})
 call <sid>hi('SpellBad', s:cdNone, s:cdNone, 'undercurl', {})
 call <sid>hi('SpellCap', s:cdNone, s:cdNone, 'undercurl', {})
@@ -192,16 +199,17 @@ call <sid>hi('Operator', s:cdFront, {}, 'none', {})
 call <sid>hi('Keyword', s:cdPink, {}, 'none', {})
 call <sid>hi('Exception', s:cdPink, {}, 'none', {})
 
-call <sid>hi('PreProc', s:cdPink, {}, 'none', {})
-call <sid>hi('Include', s:cdPink, {}, 'none', {})
-call <sid>hi('Define', s:cdPink, {}, 'none', {})
-call <sid>hi('Macro', s:cdPink, {}, 'none', {})
-call <sid>hi('PreCondit', s:cdPink, {}, 'none', {})
+call <sid>hi('PreProc', s:cdGray, {}, 'none', {})
+call <sid>hi('Include', s:cdGray, {}, 'none', {})
+call <sid>hi('Define', s:cdGray, {}, 'none', {})
+call <sid>hi('Macro', s:cdGray, {}, 'none', {})
+call <sid>hi('PreCondit', s:cdGray, {}, 'none', {})
 
 call <sid>hi('Type', s:cdBlue, {}, 'none', {})
 call <sid>hi('StorageClass', s:cdBlue, {}, 'none', {})
 call <sid>hi('Structure', s:cdBlue, {}, 'none', {})
 call <sid>hi('Typedef', s:cdBlue, {}, 'none', {})
+call <sid>hi('ClassType', s:cdCyan, {}, 'none', {})
 
 call <sid>hi('Special', s:cdFront, {}, 'none', {})
 call <sid>hi('SpecialChar', s:cdFront, {}, 'none', {})
@@ -430,3 +438,40 @@ call <sid>hi('luaFuncArgName', s:cdLightBlue, {}, 'none', {})
 call <sid>hi('luaFuncKeyword', s:cdPink, {}, 'none', {})
 call <sid>hi('luaLocal', s:cdPink, {}, 'none', {})
 call <sid>hi('luaBuiltIn', s:cdBlue, {}, 'none', {})
+
+" C++ color_coded
+call <sid>hi('StructDecl', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('UnionDecl', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('ClassDecl', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('TypeRef', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('TypedefDecl', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('TypeAliasDecl', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('EnumDecl', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('TemplateTypeParameter', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('TypeAliasTemplateDecl', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('ClassTemplate', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('ClassTemplatePartialSpecialization', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('FunctionTemplate', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('TemplateRef', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('TemplateTemplateParameter', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('UsingDeclaration', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('MemberRef', s:cdLightBlue, {}, 'italic', {})
+call <sid>hi('MemberRefExpr', s:cdYellow, {}, 'italic', {})
+call <sid>hi('Namespace', s:cdSilver, {}, 'none', {})
+call <sid>hi('NamespaceRef', s:cdSilver, {}, 'none', {})
+call <sid>hi('NamespaceAlias', s:cdSilver, {}, 'none', {})
+
+" C++ lsp-cxx-highlight
+
+call <sid>hi('LspCxxHlSymClass', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('LspCxxHlSymStruct', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('LspCxxHlSymEnum', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('LspCxxHlSymTypeAlias', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('LspCxxHlSymTypeParameter', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('LspCxxHlSymConcept', s:cdBlueGreen, {}, 'italic', {})
+call <sid>hi('LspCxxHlSymNamespace', s:cdSilver, {}, 'none', {})
+
+
+call <sid>hi('CocHighlightText', {}, s:cdSelection, 'none', {})
+
+
