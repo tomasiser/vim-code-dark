@@ -200,7 +200,7 @@ call <sid>hi('StorageClass', s:cdBlue, {}, 'none', {})
 call <sid>hi('Structure', s:cdBlue, {}, 'none', {})
 call <sid>hi('Typedef', s:cdBlue, {}, 'none', {})
 
-call <sid>hi('Special', s:cdFront, {}, 'none', {})
+call <sid>hi('Special', s:cdYellowOrange, {}, 'none', {})
 call <sid>hi('SpecialChar', s:cdFront, {}, 'none', {})
 call <sid>hi('Tag', s:cdFront, {}, 'none', {})
 call <sid>hi('Delimiter', s:cdFront, {}, 'none', {})
@@ -450,6 +450,10 @@ call <sid>hi('luaFuncKeyword', s:cdPink, {}, 'none', {})
 call <sid>hi('luaLocal', s:cdPink, {}, 'none', {})
 call <sid>hi('luaBuiltIn', s:cdBlue, {}, 'none', {})
 
+" SH:
+call <sid>hi('shDeref', s:cdLightBlue, {}, 'none', {})
+call <sid>hi('shVariable', s:cdLightBlue, {}, 'none', {})
+
 " SQL:
 call <sid>hi('sqlKeyword', s:cdPink, {}, 'none', {})
 call <sid>hi('sqlFunction', s:cdYellowOrange, {}, 'none', {})
@@ -458,3 +462,4 @@ call <sid>hi('sqlOperator', s:cdPink, {}, 'none', {})
 " YAML:
 call <sid>hi('yamlKey', s:cdBlue, {}, 'none', {})
 call <sid>hi('yamlConstant', s:cdBlue, {}, 'none', {})
+
