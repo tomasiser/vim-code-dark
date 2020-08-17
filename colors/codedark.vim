@@ -244,6 +244,16 @@ call <sid>hi('htmlTagName', s:cdBlue, {}, 'none', {})
 call <sid>hi('htmlSpecialTagName', s:cdBlue, {}, 'none', {})
 call <sid>hi('htmlArg', s:cdLightBlue, {}, 'none', {})
 
+" PHP:
+call <sid>hi('phpStaticClasses', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('phpMethod', s:cdYellow, {}, 'none', {})
+call <sid>hi('phpClass', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('phpFunction', s:cdYellow, {}, 'none', {})
+call <sid>hi('phpInclude', s:cdBlue, {}, 'none', {})
+call <sid>hi('phpUseClass', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('phpRegion', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('phpMethodsVar', s:cdLightBlue, {}, 'none', {})
+
 " CSS:
 call <sid>hi('cssBraces', s:cdFront, {}, 'none', {})
 call <sid>hi('cssInclude', s:cdPink, {}, 'none', {})
@@ -264,10 +274,13 @@ call <sid>hi('cssVendor', s:cdOrange, {}, 'none', {})
 call <sid>hi('cssValueNumber', s:cdOrange, {}, 'none', {})
 call <sid>hi('cssValueLength', s:cdOrange, {}, 'none', {})
 call <sid>hi('cssUnitDecorators', s:cdOrange, {}, 'none', {})
+call <sid>hi('cssStyle', s:cdLightBlue, {}, 'none', {})
+call <sid>hi('cssImportant', s:cdBlue, {}, 'none', {})
 
 " JavaScript:
 call <sid>hi('jsVariableDef', s:cdLightBlue, {}, 'none', {})
 call <sid>hi('jsFuncArgs', s:cdLightBlue, {}, 'none', {})
+call <sid>hi('jsFuncBlock', s:cdLightBlue, {}, 'none', {})
 call <sid>hi('jsRegexpString', s:cdLightRed, {}, 'none', {})
 call <sid>hi('jsThis', s:cdBlue, {}, 'none', {})
 call <sid>hi('jsOperatorKeyword', s:cdBlue, {}, 'none', {})
@@ -283,6 +296,10 @@ call <sid>hi('jsFuncCall', s:cdYellow, {}, 'none', {})
 call <sid>hi('jsObjectValue', s:cdLightBlue, {}, 'none', {})
 call <sid>hi('jsParen', s:cdLightBlue, {}, 'none', {})
 call <sid>hi('jsObjectProp', s:cdLightBlue, {}, 'none', {})
+call <sid>hi('jsIfElseBlock', s:cdLightBlue, {}, 'none', {})
+call <sid>hi('jsParenIfElse', s:cdLightBlue, {}, 'none', {})
+call <sid>hi('jsSpreadOperator', s:cdLightBlue, {}, 'none', {})
+call <sid>hi('jsSpreadExpression', s:cdLightBlue, {}, 'none', {})
 
 " Typescript:
 call <sid>hi('typescriptLabel', s:cdLightBlue, {}, 'none', {})
@@ -430,6 +447,7 @@ call <sid>hi('luaFuncArgName', s:cdLightBlue, {}, 'none', {})
 call <sid>hi('luaFuncKeyword', s:cdPink, {}, 'none', {})
 call <sid>hi('luaLocal', s:cdPink, {}, 'none', {})
 call <sid>hi('luaBuiltIn', s:cdBlue, {}, 'none', {})
+
 " YAML:
 call <sid>hi('yamlKey', s:cdBlue, {}, 'none', {})
 call <sid>hi('yamlConstant', s:cdBlue, {}, 'none', {})
