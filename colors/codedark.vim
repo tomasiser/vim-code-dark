@@ -169,6 +169,11 @@ call <sid>hi('VisualNOS', s:cdNone, s:cdSelection, 'none', {})
 call <sid>hi('WarningMsg', s:cdOrange, s:cdBack, 'none', {})
 call <sid>hi('WildMenu', s:cdNone, s:cdSelection, 'none', {})
 
+" Legacy groups for official git.vim and diff.vim syntax
+hi! link diffAdded DiffAdd
+hi! link diffChanged DiffChange
+hi! link diffRemoved DiffDelete
+
 call <sid>hi('Comment', s:cdGreen, {}, 'none', {})
 
 call <sid>hi('Constant', s:cdBlue, {}, 'none', {})
@@ -442,10 +447,6 @@ call <sid>hi('gitcommitDiscardedFile', s:cdRed, {}, 'none', {})
 call <sid>hi('gitcommitOverflow', s:cdRed, {}, 'none', {})
 call <sid>hi('gitcommitSummary', s:cdPink, {}, 'none', {})
 call <sid>hi('gitcommitBlank', s:cdPink, {}, 'none', {})
-
-" Diff:
-call <sid>hi('diffAdded', s:cdLightGreen, {}, 'none', {})
-call <sid>hi('diffRemoved', s:cdLightRed, {}, 'none', {})
 
 " Lua:
 call <sid>hi('luaFuncCall', s:cdYellow, {}, 'none', {})
