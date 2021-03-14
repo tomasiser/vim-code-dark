@@ -126,6 +126,9 @@ if g:codedark_conservative | let s:cdYellow = s:cdFront | endif
 let s:cdPink = {'gui': '#C586C0', 'cterm': s:cterm0E, 'cterm256': '176'}
 if g:codedark_conservative | let s:cdPink = s:cdBlue | endif
 
+
+
+
 " Vim editor colors
 "    <sid>hi(GROUP, FOREGROUND, BACKGROUND, ATTRIBUTE, SPECIAL)
 call <sid>hi('Normal', s:cdFront, s:cdBack, 'none', {})
@@ -219,12 +222,70 @@ call <sid>hi('Ignore', s:cdFront, {}, 'none', {})
 
 call <sid>hi('Error', s:cdRed, s:cdBack, 'undercurl', s:cdRed)
 
-call <sid>hi('Todo', s:cdNone, s:cdLeftMid, 'none', {})
+call <sid>hi('Todo', s:cdPink, s:cdLeftMid, 'none', {})
 
 call <sid>hi('SpellBad', s:cdRed, s:cdBack, 'undercurl', s:cdRed)
 call <sid>hi('SpellCap', s:cdRed, s:cdBack, 'undercurl', s:cdRed)
 call <sid>hi('SpellRare', s:cdRed, s:cdBack, 'undercurl', s:cdRed)
 call <sid>hi('SpellLocal', s:cdRed, s:cdBack, 'undercurl', s:cdRed)
+
+
+" Neovim Treesitter:
+call <sid>hi('TSError', s:cdRed, {}, 'none', {})
+call <sid>hi('TSPunctDelimiter', s:cdFront, {}, 'none', {})
+call <sid>hi('TSPunctBracket', s:cdFront, {}, 'none', {})
+call <sid>hi('TSPunctSpecial', s:cdFront, {}, 'none', {})
+" Constant
+call <sid>hi('TSConstant', s:cdYellow, {}, 'none', {})
+call <sid>hi('TSConstBuiltin', s:cdBlue, {}, 'none', {})
+call <sid>hi('TSConstMacro', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('TSStringRegex', s:cdOrange, {}, 'none', {})
+call <sid>hi('TSString', s:cdOrange, {}, 'none', {})
+call <sid>hi('TSStringEscape', s:cdYellowOrange, {}, 'none', {})
+call <sid>hi('TSCharacter', s:cdOrange, {}, 'none', {})
+call <sid>hi('TSNumber', s:cdLightGreen, {}, 'none', {})
+call <sid>hi('TSBoolean', s:cdBlue, {}, 'none', {})
+call <sid>hi('TSFloat', s:cdLightGreen, {}, 'none', {})
+call <sid>hi('TSAnnotation', s:cdYellow, {}, 'none', {})
+call <sid>hi('TSAttribute', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('TSNamespace', s:cdBlueGreen, {}, 'none', {})
+" Functions
+call <sid>hi('TSFuncBuiltin', s:cdYellow, {}, 'none', {})
+call <sid>hi('TSFunction', s:cdYellow, {}, 'none', {})
+call <sid>hi('TSFuncMacro', s:cdYellow, {}, 'none', {})
+call <sid>hi('TSParameter', s:cdLightBlue, {}, 'none', {})
+call <sid>hi('TSParameterReference', s:cdLightBlue, {}, 'none', {})
+call <sid>hi('TSMethod', s:cdYellow, {}, 'none', {})
+call <sid>hi('TSField', s:cdLightBlue, {}, 'none', {})
+call <sid>hi('TSProperty', s:cdLightBlue, {}, 'none', {})
+call <sid>hi('TSConstructor', s:cdBlueGreen, {}, 'none', {})
+" Keywords
+call <sid>hi('TSConditional', s:cdPink, {}, 'none', {})
+call <sid>hi('TSRepeat', s:cdPink, {}, 'none', {})
+call <sid>hi('TSLabel', s:cdLightBlue, {}, 'none', {})
+call <sid>hi('TSKeyword', s:cdBlue, {}, 'none', {})
+call <sid>hi('TSKeywordFunction', s:cdPink, {}, 'none', {})
+call <sid>hi('TSKeywordOperator', s:cdBlue, {}, 'none', {})
+call <sid>hi('TSOperator', s:cdFront, {}, 'none', {})
+call <sid>hi('TSException', s:cdPink, {}, 'none', {})
+call <sid>hi('TSType', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('TSTypeBuiltin', s:cdBlue, {}, 'none', {})
+call <sid>hi('TSStructure', s:cdLightBlue, {}, 'none', {})
+call <sid>hi('TSInclude', s:cdPink, {}, 'none', {})
+" Variable
+call <sid>hi('TSVariable', s:cdLightBlue, {}, 'none', {})
+call <sid>hi('TSVariableBuiltin', s:cdLightBlue, {}, 'none', {})
+" Text
+call <sid>hi('TSText', s:cdYellowOrange, {}, 'none', {})
+call <sid>hi('TSStrong', s:cdYellowOrange, {}, 'none', {})
+call <sid>hi('TSEmphasis', s:cdYellowOrange, {}, 'none', {})
+call <sid>hi('TSUnderline', s:cdYellowOrange, {}, 'none', {})
+call <sid>hi('TSTitle', s:cdYellowOrange, {}, 'none', {})
+call <sid>hi('TSLiteral', s:cdYellowOrange, {}, 'none', {})
+call <sid>hi('TSURI', s:cdYellowOrange, {}, 'none', {})
+" Tags
+call <sid>hi('TSTag', s:cdBlue, {}, 'none', {})
+call <sid>hi('TSTagDelimiter', s:cdGray, {}, 'none', {})
 
 " Markdown:
 call <sid>hi('markdownBold', s:cdBlue, {}, 'bold', {})
@@ -468,3 +529,5 @@ call <sid>hi('sqlOperator', s:cdPink, {}, 'none', {})
 call <sid>hi('yamlKey', s:cdBlue, {}, 'none', {})
 call <sid>hi('yamlConstant', s:cdBlue, {}, 'none', {})
 
+" Coc Explorer:
+call <sid>hi('CocExplorerIndentLine', s:cdCursorDark, {}, 'none', {})
