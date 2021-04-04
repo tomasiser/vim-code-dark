@@ -126,9 +126,6 @@ if g:codedark_conservative | let s:cdYellow = s:cdFront | endif
 let s:cdPink = {'gui': '#C586C0', 'cterm': s:cterm0E, 'cterm256': '176'}
 if g:codedark_conservative | let s:cdPink = s:cdBlue | endif
 
-
-
-
 " Vim editor colors
 "    <sid>hi(GROUP, FOREGROUND, BACKGROUND, ATTRIBUTE, SPECIAL)
 call <sid>hi('Normal', s:cdFront, s:cdBack, 'none', {})
@@ -222,7 +219,7 @@ call <sid>hi('Ignore', s:cdFront, {}, 'none', {})
 
 call <sid>hi('Error', s:cdRed, s:cdBack, 'undercurl', s:cdRed)
 
-call <sid>hi('Todo', s:cdPink, s:cdLeftMid, 'none', {})
+call <sid>hi('Todo', s:cdNone, s:cdLeftMid, 'none', {})
 
 call <sid>hi('SpellBad', s:cdRed, s:cdBack, 'undercurl', s:cdRed)
 call <sid>hi('SpellCap', s:cdRed, s:cdBack, 'undercurl', s:cdRed)
