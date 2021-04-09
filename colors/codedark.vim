@@ -296,6 +296,29 @@ call <sid>hi('markdownUrl', s:cdLightBlue, {}, 'underline', {})
 call <sid>hi('markdownLinkText', s:cdOrange, {}, 'none', {})
 call <sid>hi('markdownEscape', s:cdYellowOrange, {}, 'none', {})
 
+" Asciidoc (for default syntax highlighting)
+call <sid>hi("asciidocAttributeEntry", s:cdYellowOrange, {}, 'none', {})
+call <sid>hi("asciidocAttributeList", s:cdPink, {}, 'none', {})
+call <sid>hi("asciidocAttributeRef", s:cdYellowOrange, {}, 'none', {})
+call <sid>hi("asciidocHLabel", s:cdBlue, {}, 'bold', {})
+call <sid>hi("asciidocListingBlock", s:cdOrange, {}, 'none', {})
+call <sid>hi("asciidocMacroAttributes", s:cdYellowOrange, {}, 'none', {})
+call <sid>hi("asciidocOneLineTitle", s:cdBlue, {}, 'bold', {})
+call <sid>hi("asciidocPassthroughBlock", s:cdBlue, {}, 'none', {})
+call <sid>hi("asciidocQuotedMonospaced", s:cdOrange, {}, 'none', {})
+call <sid>hi("asciidocTriplePlusPassthrough", s:cdYellow, {}, 'none', {})
+call <sid>hi("asciidocMacro", s:cdPink, {}, 'none', {})
+call <sid>hi("asciidocAdmonition", s:cdOrange, {}, 'none', {})
+call <sid>hi("asciidocQuotedEmphasized", s:cdBlue, {}, 'italic', {})
+call <sid>hi("asciidocQuotedEmphasized2", s:cdBlue, {}, 'italic', {})
+call <sid>hi("asciidocQuotedEmphasizedItalic", s:cdBlue, {}, 'italic', {})
+hi! link asciidocBackslash Keyword
+hi! link asciidocQuotedBold markdownBold
+hi! link asciidocQuotedMonospaced2 asciidocQuotedMonospaced
+hi! link asciidocQuotedUnconstrainedBold asciidocQuotedBold
+hi! link asciidocQuotedUnconstrainedEmphasized asciidocQuotedEmphasized
+hi! link asciidocURL markdownUrl
+
 " JSON:
 call <sid>hi('jsonKeyword', s:cdLightBlue, {}, 'none', {})
 call <sid>hi('jsonEscape', s:cdYellowOrange, {}, 'none', {})
