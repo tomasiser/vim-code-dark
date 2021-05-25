@@ -24,7 +24,7 @@ fun! <sid>hi(group, fg, bg, attr, sp)
     " Not changing background color in Normal and LineNr modes allows to use tmux background and thus
     " handle background change when losing focus - ideal for moving between panes.
     " Inspiration from https://stackoverflow.com/a/33553372/700659
-    if a:group != "Normal" && a:group != "LineNr"
+    if a:group != "Normal" && a:group != "LineNr" && a:group != "EndOfBuffer"
       exec "hi " . a:group . " guibg=" . a:bg.gui . " ctermbg=" . (g:codedark_term256 ? a:bg.cterm256 : a:bg.cterm)
     endif
   endif
