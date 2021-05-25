@@ -1,3 +1,10 @@
+# this is fork of `tomasiser/vim-code-dark`
+It plays nicely with tmux active/inactive panes by prohibiting the theme to set background colour. This results in useing tmux-defined background, which, in turn, enables easier visual distinction between active and inactive panes. See screenshots below.
+
+![Screenshot 2021-05-24 at 12 44 32](https://user-images.githubusercontent.com/9802715/119336802-5e653100-bc8e-11eb-8821-e42db0228d0e.png)
+![Screenshot 2021-05-24 at 12 44 09](https://user-images.githubusercontent.com/9802715/119336808-602ef480-bc8e-11eb-8a0c-a89d7db8aefe.png)
+
+
 # vim-code-dark
 `vim-code-dark` is a dark **color scheme for [Vim](http://www.vim.org/)** heavily inspired by the look of the Dark+ scheme of [Visual Studio Code](https://code.visualstudio.com/). While many of the colors are same, there are additional colors for specific usage or reserved for future use. The scheme also defines specific GUI colors (e.g. popup menu) and fully supports [`vim-airline`](https://github.com/vim-airline/vim-airline).
 
