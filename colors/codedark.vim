@@ -388,6 +388,13 @@ call <sid>hi('jsIfElseBlock', s:cdLightBlue, {}, 'none', {})
 call <sid>hi('jsParenIfElse', s:cdLightBlue, {}, 'none', {})
 call <sid>hi('jsSpreadOperator', s:cdLightBlue, {}, 'none', {})
 call <sid>hi('jsSpreadExpression', s:cdLightBlue, {}, 'none', {})
+call <sid>hi('jsDocParam', s:cdLightBlue, {}, 'none', {})
+call <sid>hi('jsDocSeeTags', s:cdBlue, {}, 'none', {})
+call <sid>hi('jsDocTags', s:cdBlue, {}, 'none', {})
+call <sid>hi('jsDocType', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('jsDocTypeBrackets', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('jsDocTypeNoParam', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('jsDocTypeRecord', s:cdBlueGreen, {}, 'none', {})
 
 " Typescript:
 call <sid>hi('typescriptLabel', s:cdLightBlue, {}, 'none', {})
