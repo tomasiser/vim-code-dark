@@ -553,7 +553,7 @@ call <sid>hi('yamlConstant', s:cdBlue, {}, 'none', {})
 call <sid>hi('CocExplorerIndentLine', s:cdCursorDark, {}, 'none', {})
 
 " nvim-cmp
-call <sid>hi('CmpItemAbbrDeprecated', s:cdGray, {}, 'none', {})
+call <sid>hi('CmpItemAbbrDeprecated', s:cdGray, {}, 'strikethrough', {})
 call <sid>hi('CmpItemAbbrMatch', s:cdBlue, {}, 'none', {})
 call <sid>hi('CmpItemAbbrMatchFuzzy', s:cdBlue, {}, 'none', {})
 call <sid>hi('CmpItemKindVariable', s:cdLightBlue, {}, 'none', {})
