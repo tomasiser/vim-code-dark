@@ -130,6 +130,7 @@ let s:cdYellow = {'gui': '#DCDCAA', 'cterm': s:cterm0A, 'cterm256': '187'}
 if g:codedark_conservative | let s:cdYellow = s:cdFront | endif
 let s:cdPink = {'gui': '#C586C0', 'cterm': s:cterm0E, 'cterm256': '176'}
 if g:codedark_conservative | let s:cdPink = s:cdBlue | endif
+let s:cdSilver = {'gui': '#C0C0C0', 'cterm': s:cterm05, 'cterm256': '7'}
 
 " Vim editor colors
 "    <sid>hi(GROUP, FOREGROUND, BACKGROUND, ATTRIBUTE, SPECIAL)
@@ -541,6 +542,7 @@ call <sid>hi('luaFuncKeyword', s:cdPink, {}, 'none', {})
 call <sid>hi('luaLocal', s:cdPink, {}, 'none', {})
 call <sid>hi('luaBuiltIn', s:cdBlue, {}, 'none', {})
 
+
 " SH:
 call <sid>hi('shDeref', s:cdLightBlue, {}, 'none', {})
 call <sid>hi('shVariable', s:cdLightBlue, {}, 'none', {})
@@ -554,7 +556,48 @@ call <sid>hi('sqlOperator', s:cdPink, {}, 'none', {})
 call <sid>hi('yamlKey', s:cdBlue, {}, 'none', {})
 call <sid>hi('yamlConstant', s:cdBlue, {}, 'none', {})
 
+" C++:
+call <sid>hi('CTagsClass', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('CTagsStructure', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('CTagsNamespace', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('CTagsGlobalVariable', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('CTagsDefinedName ', s:cdBlue, {}, 'none', {})
+highlight def link CTagsFunction Function
+highlight def link CTagsMember Identifier
+
+" C++ color_coded
+call <sid>hi('StructDecl', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('UnionDecl', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('ClassDecl', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('TypeRef', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('TypedefDecl', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('TypeAliasDecl', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('EnumDecl', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('TemplateTypeParameter', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('TypeAliasTemplateDecl', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('ClassTemplate', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('ClassTemplatePartialSpecialization', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('FunctionTemplate', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('TemplateRef', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('TemplateTemplateParameter', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('UsingDeclaration', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('MemberRef', s:cdLightBlue, {}, 'italic', {})
+call <sid>hi('MemberRefExpr', s:cdYellow, {}, 'italic', {})
+call <sid>hi('Namespace', s:cdSilver, {}, 'none', {})
+call <sid>hi('NamespaceRef', s:cdSilver, {}, 'none', {})
+call <sid>hi('NamespaceAlias', s:cdSilver, {}, 'none', {})
+
+" C++ lsp-cxx-highlight
+call <sid>hi('LspCxxHlSymClass', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('LspCxxHlSymStruct', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('LspCxxHlSymEnum', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('LspCxxHlSymTypeAlias', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('LspCxxHlSymTypeParameter', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('LspCxxHlSymConcept', s:cdBlueGreen, {}, 'italic', {})
+call <sid>hi('LspCxxHlSymNamespace', s:cdSilver, {}, 'none', {})
+
 " Coc Explorer:
+call <sid>hi('CocHighlightText', {}, s:cdSelection, 'none', {})
 call <sid>hi('CocExplorerIndentLine', s:cdCursorDark, {}, 'none', {})
 
 " nvim-cmp
