@@ -140,3 +140,12 @@ set guifont=Powerline_Consolas:h11
 set renderoptions=type:directx,gamma:1.5,contrast:0.5,geom:1,renmode:5,taamode:1,level:0.5
 ```
 
+### Are italics supported? 
+Italics in comments can be enabled by setting `g:codedark_italics = 1` _before_
+setting the colorscheme in your `.vimrc` like so:
+```
+let g:codedark_italics = 1
+colorscheme codedark
+```
+Please note that your terminal must support rendering italic fonts.
+
