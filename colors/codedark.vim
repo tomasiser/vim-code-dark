@@ -223,7 +223,7 @@ call <sid>hi('Debug', s:cdFront, {}, 'none', {})
 call <sid>hi('Underlined', s:cdNone, {}, 'underline', {})
 call <sid>hi("Conceal", s:cdFront, s:cdBack, 'none', {})
 
-call <sid>hi('Ignore', s:cdFront, {}, 'none', {})
+call <sid>hi('Ignore', s:cdBack, {}, 'none', {})
 
 call <sid>hi('Error', s:cdRed, s:cdBack, 'undercurl', s:cdRed)
 
