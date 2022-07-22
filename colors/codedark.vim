@@ -229,7 +229,7 @@ call <sid>hi('Debug', s:cdFront, {}, 'none', {})
 call <sid>hi('Underlined', s:cdNone, {}, 'underline', {})
 call <sid>hi("Conceal", s:cdFront, s:cdBack, 'none', {})
 
-call <sid>hi('Ignore', s:cdFront, {}, 'none', {})
+call <sid>hi('Ignore', s:cdBack, {}, 'none', {})
 
 call <sid>hi('Error', s:cdRed, s:cdBack, 'undercurl', s:cdRed)
 
@@ -299,6 +299,12 @@ call <sid>hi('TSTag', s:cdBlue, {}, 'none', {})
 call <sid>hi('TSTagDelimiter', s:cdGray, {}, 'none', {})
 
 " Markdown:
+call <sid>hi('markdownH1', s:cdBlue, {}, 'bold', {})
+call <sid>hi('markdownH2', s:cdBlue, {}, 'bold', {})
+call <sid>hi('markdownH3', s:cdBlue, {}, 'bold', {})
+call <sid>hi('markdownH4', s:cdBlue, {}, 'bold', {})
+call <sid>hi('markdownH5', s:cdBlue, {}, 'bold', {})
+call <sid>hi('markdownH6', s:cdBlue, {}, 'bold', {})
 call <sid>hi('markdownBold', s:cdBlue, {}, 'bold', {})
 call <sid>hi('markdownCode', s:cdOrange, {}, 'none', {})
 call <sid>hi('markdownRule', s:cdBlue, {}, 'bold', {})
