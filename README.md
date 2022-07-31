@@ -21,39 +21,38 @@
 #### Fixed 8/16 colors
 ![Terminal on Debian with 16 colors](https://cloud.githubusercontent.com/assets/10374559/23341713/0e8dd778-fc4d-11e6-8430-b11f161305d7.png)
 
-## Color Palette
-
-![Color Palette](https://cloud.githubusercontent.com/assets/10374559/23341312/1961f416-fc45-11e6-83ba-d7180c5fdd6d.png)
-
 ## Installation
 
 ### 1) Download
 
 Simply as any other Vim plugins: download manually or follow the standard procedure of your plugin manager:
-*  [Vundle](https://github.com/gmarik/vundle)
- ```
+* [Vundle](https://github.com/gmarik/vundle)
+ ```vim
  Plugin 'tomasiser/vim-code-dark'
  ```
-*  [vim-plug](https://github.com/junegunn/vim-plug)
-```
+* [vim-plug](https://github.com/junegunn/vim-plug)
+```vim
 Plug 'tomasiser/vim-code-dark'
 ```
-*  manual
+* [builtin package manager](https://vimhelp.org/repeat.txt.html#packages)
+```bash
+# Regular Vim
+mkdir -p ~/.vim/pack/themes/start
+cd ~/.vim/pack/themes/start
+git clone https://github.com/tomasiser/vim-code-dark
 
-   copy all of the files to `~/.vim` (or `$HOME\vimfiles` on Windows) directory
+# Neovim
+mkdir -p ~/.local/share/nvim/site/pack/themes/start
+cd ~/.local/share/nvim/site/pack/themes/start
+git clone https://github.com/tomasiser/vim-code-dark
+```
 
 ### 2) Enable in `.vimrc`
 
 Add the following line to your `.vimrc`:
 
-```
+```vim
 colorscheme codedark
-```
-
-If you have [`vim-airline`](https://github.com/vim-airline/vim-airline), you can also enable the provided theme:
-
-```
-let g:airline_theme = 'codedark'
 ```
 
 ### 3) Terminal support
@@ -63,8 +62,7 @@ let g:airline_theme = 'codedark'
 
 #### 3.2) If the colors seem to be wrong
 If your terminal supports 256 colors (see [this script](http://www.robmeerman.co.uk/unix/256colours) if you want to test your terminal), you **may need to set `t_Co` to 256** and [possibly also reset the `t_ut` value](http://vi.stackexchange.com/questions/238/tmux-is-changing-part-of-the-background-in-vim) in your `.vimrc` before setting the colorscheme:
-
-```
+```vim
 set t_Co=256
 set t_ut=
 colorscheme codedark
@@ -81,7 +79,7 @@ If your terminal does not support 256 colors, you may want to change your termin
 ##### 3.3.1) Some Unix terminals
 Clone [`base16-shell`](https://github.com/chriskempson/base16-shell/) into `~/.config/base16-shell`:
 
-```
+```bash
 git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
 ```
 
@@ -89,7 +87,7 @@ Then copy a script from this (`vim-code-dark`) repository (`base16/templates/she
 
 Following the instructions from [`base16-shell`](https://github.com/chriskempson/base16-shell/), you should now modify your `~/.bashrc` or `~/.zshrc` (depending on your shell) and insert the following lines:
 
-```
+```bash
 BASE16_SHELL=$HOME/.config/base16-shell/
 [ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
 ```
@@ -98,27 +96,32 @@ Now start a new shell and type the following command: `base16_codedark`.
 
 You should now be able to use Vim with your new colorscheme.
 
-##### 3.3.2) iTerm2
-iTerm2 should actually support 256 colors, try setting `Report Terminal Type` to `xterm-256color` and follow step 3.2). If it does not work, you can manually modify your terminal colors in settings (`CMD+i`, Colors tab) following the [color palette picture](#color-palette). You will have to choose which color to use as red, blue etc. according to your personal preferences.
-
-##### 3.3.3) PuTTY
+##### 3.3.2) PuTTY
 PuTTY should actually support 256 colors, try following [steps on StackOverflow](http://superuser.com/questions/436910/emulate-256-colors-in-putty-terminal). If it does not work, run `base16/templates/putty/putty/base16-codedark.reg` to modify your registry, then run PuTTY and load `codedark` in the session list. This will modify your PuTTY terminal colors.
+
+## CUSTOMIZATION
+
+**:exclamation: To enable any of the following customizations, put the specific lines before setting the colorscheme**
+```vim
+" If you don't like many colors and prefer the conservative style of the standard Visual Studio
+let g:codedark_conservative=1
+" Activates italicized comments
+let g:codedark_italics=1
+" Make the background transparent (make sure your terminal supports italics)
+let g:codedark_transparent=1
+" If you have vim-airline, you can also enable the provided theme
+let g:airline_theme = 'codedark'
+
+colorscheme codedark
+```
 
 ## FAQ
 
 ### The background color in my terminal is wrong when there is no text!
 Try resetting the `t_ut` value in your `.vimrc` as [described here](http://vi.stackexchange.com/questions/238/tmux-is-changing-part-of-the-background-in-vim):
-```
+```vim
 set t_Co=256
 set t_ut=
-colorscheme codedark
-```
-
-### What is and how to enable the conservative mode?
-If you don't like many colors and prefer the **conservative style of the standard Visual Studio**, you can try the conservative mode with reduced number of colors. To enable it, put the following line to your `.vimrc` *before* setting the scheme, like so:
-
-```
-let g:codedark_conservative = 1
 colorscheme codedark
 ```
 
@@ -134,18 +137,12 @@ There are a lot of syntax definitions with different highlight groups. Feel free
 ### What setup can I see on the first screenshots?
 Screenshots come from gVim on Windows with the following font options and [`vim-airline`](https://github.com/vim-airline/vim-airline) enabled.
 
-```
+```vim
 set enc=utf-8
 set guifont=Powerline_Consolas:h11
 set renderoptions=type:directx,gamma:1.5,contrast:0.5,geom:1,renmode:5,taamode:1,level:0.5
 ```
 
-### Are italics supported? 
-Italics in comments can be enabled by setting `g:codedark_italics = 1` _before_
-setting the colorscheme in your `.vimrc` like so:
-```
-let g:codedark_italics = 1
-colorscheme codedark
-```
-Please note that your terminal must support rendering italic fonts.
+## Color Palette
 
+![Color Palette](https://cloud.githubusercontent.com/assets/10374559/23341312/1961f416-fc45-11e6-83ba-d7180c5fdd6d.png)
