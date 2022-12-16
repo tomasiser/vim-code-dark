@@ -106,7 +106,7 @@ let s:cdDiffGreenLight = {'gui': '#4B5632', 'cterm': s:cterm09, 'cterm256': '58'
 let s:cdDiffBlueLight = {'gui': '#87d7ff', 'cterm': s:cterm0C, 'cterm256': '117'}
 let s:cdDiffBlue = {'gui': '#005f87', 'cterm': s:cterm0D, 'cterm256': '24'}
 
-let s:cdSearchCurrent = {'gui': '#4B5632', 'cterm': s:cterm09, 'cterm256': '58'} 
+let s:cdSearchCurrent = {'gui': '#4B5632', 'cterm': s:cterm09, 'cterm256': '58'}
 let s:cdSearch = {'gui': '#264F78', 'cterm': s:cterm03, 'cterm256': '24'}
 
 " Syntax colors:
@@ -616,7 +616,7 @@ call <sid>hi('CocHighlightText', {}, s:cdSelection, 'none', {})
 call <sid>hi('CocExplorerIndentLine', s:cdCursorDark, {}, 'none', {})
 
 " nvim-cmp
-call <sid>hi('CmpItemAbbrDeprecated', s:cdGray, {}, 'strikethrough', {})
+call <sid>hi('CmpItemAbbrDeprecated', s:cdGray, {}, 'none', {})
 call <sid>hi('CmpItemAbbrMatch', s:cdBlue, {}, 'none', {})
 call <sid>hi('CmpItemAbbrMatchFuzzy', s:cdBlue, {}, 'none', {})
 call <sid>hi('CmpItemKindVariable', s:cdLightBlue, {}, 'none', {})
