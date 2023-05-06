@@ -105,6 +105,8 @@ PuTTY should actually support 256 colors, try following [steps on StackOverflow]
 ```vim
 " If you don't like many colors and prefer the conservative style of the standard Visual Studio
 let g:codedark_conservative=1
+" If you like the new dark modern colors (Needs feedback!)
+let g:codedark_modern=1
 " Activates italicized comments (make sure your terminal supports italics)
 let g:codedark_italics=1
 " Make the background transparent
