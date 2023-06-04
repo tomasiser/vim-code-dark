@@ -305,7 +305,7 @@ if has("nvim")
     call <sid>hiTS('@text', 'TSText', s:cdFront, s:cdNone, 'bold', {})
     call <sid>hiTS('@text.strong', 'TSStrong', s:cdFront, s:cdNone, 'bold', {})
     call <sid>hiTS('@text.emphasis', 'TSEmphasis', s:cdYellowOrange, s:cdNone, 'italic', {})
-    hi! link @text.underline Underlined
+    call <sid>hiTSlink('@text.underline', 'TSUnderline', 'Underlined')
     call <sid>hiTS('@text.title', 'TSTitle', s:cdBlue, {}, 'bold', {})
     call <sid>hiTS('@text.literal', 'TSLiteral', s:cdOrange, {}, 'none', {})
     call <sid>hiTS('@text.uri', 'TSURI', s:cdOrange, {}, 'none', {})
