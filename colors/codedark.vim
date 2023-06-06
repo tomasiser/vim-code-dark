@@ -198,7 +198,7 @@ call <sid>hi('StatusLineNC', s:cdFront, s:cdLeftDark, 'none', {})
 call <sid>hi('TabLine', s:cdFront, s:cdTabOther, 'none', {})
 call <sid>hi('TabLineFill', s:cdFront, s:cdTabOutside, 'none', {})
 call <sid>hi('TabLineSel', s:cdFront, s:cdTabCurrent, 'none', {})
-call <sid>hi('Title', s:cdNone, s:cdNone, 'bold', {})
+call <sid>hi('Title', s:cdBlue, s:cdNone, 'bold', {})
 call <sid>hi('Visual', s:cdNone, s:cdSelection, 'none', {})
 hi! link VisualNOS Visual
 call <sid>hi('WarningMsg', s:cdOrange, s:cdBack, 'none', {})
@@ -306,7 +306,7 @@ if has("nvim")
     call <sid>hiTS('@text.strong', 'TSStrong', s:cdFront, s:cdNone, 'bold', {})
     call <sid>hiTS('@text.emphasis', 'TSEmphasis', s:cdYellowOrange, s:cdNone, 'italic', {})
     call <sid>hiTSlink('@text.underline', 'TSUnderline', 'Underlined')
-    call <sid>hiTS('@text.title', 'TSTitle', s:cdBlue, {}, 'bold', {})
+    call <sid>hiTSlink('@text.title', 'TSTitle', 'Title')
     call <sid>hiTS('@text.literal', 'TSLiteral', s:cdOrange, {}, 'none', {})
     call <sid>hiTS('@text.uri', 'TSURI', s:cdOrange, {}, 'none', {})
     " Tags
@@ -328,7 +328,7 @@ if has("nvim")
 endif
 
 " MARKDOWN (built-in)
-call <sid>hi('markdownH1', s:cdBlue, {}, 'bold', {})
+hi! link markdownH1 Title
 hi! link markdownH2 markdownH1
 hi! link markdownH3 markdownH1
 hi! link markdownH4 markdownH1
