@@ -450,7 +450,7 @@ call <sid>hi('VueKey', s:cdPink, {}, 'none', {})
 
 " Typescript:
 call <sid>hi('typescriptLabel', s:cdLightBlue, {}, 'none', {})
-call <sid>hi('typescriptExceptions', s:cdLightBlue, {}, 'none', {})
+call <sid>hi('typescriptExceptions', s:cdPink, {}, 'none', {})
 call <sid>hi('typescriptBraces', s:cdFront, {}, 'none', {})
 call <sid>hi('typescriptEndColons', s:cdLightBlue, {}, 'none', {})
 call <sid>hi('typescriptParens', s:cdFront, {}, 'none', {})
