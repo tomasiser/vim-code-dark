@@ -127,7 +127,7 @@ let s:cdDiffBlue = {'gui': '#005f87', 'cterm': s:cterm0D, 'cterm256': '24'}
 
 let s:cdSearchCurrent = {'gui': '#4B5632', 'cterm': s:cterm09, 'cterm256': '58'}
 if g:codedark_modern | let s:cdSearchCurrent = {'gui': '#9e6a03', 'cterm': s:cterm09, 'cterm256': '58'} | endif
-let s:cdSearch = {'gui': '#264F78', 'cterm': s:cterm03, 'cterm256': '24'}
+let s:cdSearch = {'gui': '#773800', 'cterm': s:cterm03, 'cterm256': '94'}
 
 " Syntax colors:
 
