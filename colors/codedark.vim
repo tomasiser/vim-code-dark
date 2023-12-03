@@ -115,15 +115,11 @@ let s:cdCursorLight = {'gui': '#AEAFAD', 'cterm': s:cterm04, 'cterm256': '145'}
 let s:cdSelection = {'gui': '#264F78', 'cterm': s:cterm03, 'cterm256': '24'}
 let s:cdLineNumber = {'gui': '#5A5A5A', 'cterm': s:cterm04, 'cterm256': '240'}
 
-let s:cdDiffRedDark = {'gui': '#4B1818', 'cterm': s:cterm08, 'cterm256': '52'}
-if g:codedark_modern | let s:cdDiffRedDark = {'gui': '#da3633', 'cterm': 'NONE', 'cterm256': '52'} | endif
-let s:cdDiffRedLight = {'gui': '#6F1313', 'cterm': s:cterm08, 'cterm256': '52'}
-let s:cdDiffRedLightLight = {'gui': '#FB0101', 'cterm': s:cterm08, 'cterm256': '09'}
-let s:cdDiffGreenDark = {'gui': '#373D29', 'cterm': s:cterm0B, 'cterm256': '237'}
-if g:codedark_modern | let s:cdDiffGreenDark = {'gui': '#238636', 'cterm': 'NONE', 'cterm256': '237'} | endif
-let s:cdDiffGreenLight = {'gui': '#4B5632', 'cterm': s:cterm09, 'cterm256': '58'}
-let s:cdDiffBlueLight = {'gui': '#87d7ff', 'cterm': s:cterm0C, 'cterm256': '117'}
-let s:cdDiffBlue = {'gui': '#005f87', 'cterm': s:cterm0D, 'cterm256': '24'}
+let s:cdDiffAdd = {'gui': '#265E4D', 'cterm': s:cterm09, 'cterm256': '22'}
+let s:cdDiffChange = {'gui': '#15352C', 'cterm': s:cterm0D, 'cterm256': '23'}
+let s:cdDiffDelete = {'gui': '#3C0000', 'cterm': s:cterm08, 'cterm256': '52'}
+let s:cdDiffTextBg = {'gui': '#5E2A23', 'cterm': s:cterm0C, 'cterm256': '117'}
+let s:cdDiffTextFg = {'gui': 'NONE', 'cterm': s:cterm00, 'cterm256': '234'}
 
 let s:cdSearchCurrent = {'gui': '#4B5632', 'cterm': s:cterm09, 'cterm256': '58'}
 if g:codedark_modern | let s:cdSearchCurrent = {'gui': '#9e6a03', 'cterm': s:cterm09, 'cterm256': '58'} | endif
@@ -169,10 +165,10 @@ call <sid>hi('Cursor', s:cdCursorDark, s:cdCursorLight, 'none', {})
 call <sid>hi('CursorLine', {}, s:cdCursorDarkDark, 'none', {})
 hi! link CursorColumn CursorLine
 call <sid>hi('Directory', s:cdBlue, s:cdNone, 'none', {})
-call <sid>hi('DiffAdd', s:cdFront, s:cdDiffGreenLight, 'none', {})
-call <sid>hi('DiffChange', s:cdFront, s:cdDiffBlue, 'none', {})
-call <sid>hi('DiffDelete', s:cdFront, s:cdDiffRedLight, 'none', {})
-call <sid>hi('DiffText', s:cdBack, s:cdDiffBlueLight, 'none', {})
+call <sid>hi('DiffAdd', s:cdNone, s:cdDiffAdd, 'none', {})
+call <sid>hi('DiffChange', s:cdNone, s:cdDiffChange, 'none', {})
+call <sid>hi('DiffDelete', s:cdNone, s:cdDiffDelete, 'none', {})
+call <sid>hi('DiffText', s:cdDiffTextFg, s:cdDiffTextBg, 'none', {})
 call <sid>hi('EndOfBuffer', s:cdLineNumber, s:cdBack, 'none', {})
 call <sid>hi('ErrorMsg', s:cdRed, s:cdBack, 'none', {})
 call <sid>hi('VertSplit', s:cdSplitDark, s:cdBack, 'none', {})
